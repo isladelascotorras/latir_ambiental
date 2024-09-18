@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Guillermo Toranzo Perez" />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>Afiches · Latir Ambiental</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="fontawesome-free-6.5.2-web/css/all.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this -->
+    <link href="css/features.css" rel="stylesheet" />
+    <link href="css/carousel.css" rel="stylesheet" />
+    <!-- <link href="css/cheatsheet.css" rel="stylesheet" /> -->
+    <style type="text/css">
+      .contenedor {
+        margin: 10px auto;
+        max-width: 1200px;
+      }
+
+      .card {
+        padding: 10px;
+        background: #fff;
+        margin-bottom: 100px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 50px rgba(71, 71, 71, 0.15);
+      }
+
+      .card img {
+        width: 100%;
+        vertical-align: top;
+      }
+    </style>
+    <script type="text/javascript">
+      // lista de imágenes a cargar (las que tengan data-src)
+      var imagenesACargar = document.querySelectorAll("img[data-src]");
+      // total de imágenes cargadas
+      var totalImagenesCargadas = -1;
+      // función que carga la siguiente imagen de la lista
+      function cargarImagenesUnaAUna() {
+        // avanzamos a la siguiente imagen de la lista
+        totalImagenesCargadas++;
+        // si existe (aún quedan imágenes)
+        if (imagenesACargar[totalImagenesCargadas]) {
+          // le asignamos esta función al evento onload
+          imagenesACargar[totalImagenesCargadas].onload = cargarImagenesUnaAUna;
+          // cambiamos el src por el valor del data-atributo
+          imagenesACargar[totalImagenesCargadas].src =
+            imagenesACargar[totalImagenesCargadas].dataset.src;
+        }
+      }
+    </script>
+    <link rel="icon" type="image/png" href="images/faviconX400.png" />
+  </head>
+  <body>
+    <div>
+      <header>
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light rounded"
+          aria-label="Eleventh navbar example"
+        >
+          <div class="container-fluid">
+            <a
+              class="navbar-brand"
+              href="https://guitoranzo.github.io/latir_ambiental/"
+            >
+              <img
+                src="images/faviconX400.png"
+                alt="Bootstrap"
+                width="32"
+                height="32"
+              />
+              Latir ambiental</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarsExample09"
+              aria-controls="navbarsExample09"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample09">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!--  -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link active dropdown-toggle"
+                    href="#"
+                    id="dropdown09"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Áreas Protegidas</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                    <li>
+                      <a class="dropdown-item" href="bosques.html">Bosques</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="manglares.html"
+                        >Manglares</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="playas.html">Playas</a>
+                    </li>
+                  </ul>
+                </li>
+                <!--  -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link active dropdown-toggle"
+                    href="#"
+                    id="dropdown09"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Nuevas Legislaciones</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="docs/legislaciones/Ley_150-goc-No87-2023.pdf"
+                        >Ley 150</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="docs/legislaciones/Ley_155-goc-No84-2023.pdf"
+                        >Ley 155</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="docs/legislaciones/DL_AP_concilado_DJ_ANPP-11.9.23.pdf"
+                        >DL-AP concilado DJ-ANPP</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!--  -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link active dropdown-toggle"
+                    href="#"
+                    id="dropdown09"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Galería</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                    <li>
+                      <a class="dropdown-item" href="afiches.html">Afiches</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="galeria.html">Fotos</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="videos.html">Videos</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="contenedor">
+        <div>
+          <h1 class="text-center mb-5">Galería de Afiches</h1>
+        </div>
+        <section>
+          <div class="card">
+            <img
+              src="images/afiches/La_Cañada_1.jpg"
+              data-src="images/afiches/"
+              alt=""
+            />
+          </div>
+
+          <div class="card">
+            <img
+              src="images/afiches/La_Cañada_2.jpg"
+              data-src="images/afiches/"
+              alt=""
+            />
+          </div>
+
+          <div class="card">
+            <img
+              src="images/afiches/Los_Indios_1.jpg"
+              data-src="images/afiches/"
+              alt=""
+            />
+          </div>
+
+          <div class="card">
+            <img
+              src="images/afiches/Los_Indios_2.jpg"
+              data-src="images/afiches/"
+              alt=""
+            />
+          </div>
+
+          <div class="card">
+            <img
+              src="images/afiches/Los_Cayos_1.jpg"
+              data-src="images/afiches/"
+              alt=""
+            />
+          </div>
+
+          <div class="card">
+            <img
+              src="images/afiches/Los_Cayos_2.jpg"
+              data-src="images/afiches/"
+              alt=""
+            />
+          </div>
+
+          <!-- <div class="card"></div> -->
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

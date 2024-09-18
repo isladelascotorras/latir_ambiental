@@ -1,0 +1,38 @@
+main {
+  display: none;
+}
+
+main.active {
+  display: block;
+}
+/*Estilor del menú con CSS*/
+/*nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  color: #666;
+}*/
+/* menú responsive */
+/*@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}*/

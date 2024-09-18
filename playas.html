@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Guillermo Toranzo Perez" />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>Playas · Latir Ambiental</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="fontawesome-free-6.5.2-web/css/all.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .table-bordered {
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+      .table-bordered th,
+      .table-bordered td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/cheatsheet.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="images/faviconX400.png" />
+  </head>
+  <body class="bg-light">
+    <!-- Corregir header -->
+    <header
+      class="bd-header bg-light py-3 d-flex align-items-stretch border-bottom border-light"
+    >
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light rounded"
+        aria-label="Eleventh navbar example"
+      >
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="https://guitoranzo.github.io/latir_ambiental/"
+          >
+            <img
+              src="images/faviconX400.png"
+              alt="Bootstrap"
+              width="32"
+              height="32"
+            />
+            Latir ambiental</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample09"
+            aria-controls="navbarsExample09"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample09">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!--  -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="dropdown09"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Áreas Protegidas</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                  <li>
+                    <a class="dropdown-item" href="bosques.html">Bosques</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="manglares.html">Manglares</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="playas.html">Playas</a>
+                  </li>
+                </ul>
+              </li>
+              <!--  -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="dropdown09"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Nuevas Legislaciones</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="docs/legislaciones/Ley_150-goc-No87-2023.pdf"
+                      >Ley 150</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="docs/legislaciones/Ley_155-goc-No84-2023.pdf"
+                      >Ley 155</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="docs/legislaciones/DL_AP_concilado_DJ_ANPP-11.9.23.pdf"
+                      >DL-AP concilado DJ-ANPP</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!--  -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="dropdown09"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Galería</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                  <li>
+                    <a class="dropdown-item" href="afiches.html">Afiches</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="galeria.html">Fotos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="videos.html">Videos</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--  -->
+    <aside
+      class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2"
+    >
+      <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">En esta pagina</h2>
+      <nav class="small" id="toc">
+        <ul class="list-unstyled">
+          <li class="my-2">
+            <button
+              class="btn d-inline-flex align-items-center collapsed"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#contents-collapse"
+              aria-controls="contents-collapse"
+            >
+              Contenido
+            </button>
+            <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#typography"
+                  >Información</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#images"
+                  >Imágen</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#tables"
+                  >Tabla 1</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#secondtext"
+                  >Información</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#tabledos"
+                  >Tabla 2</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#thirdtext"
+                  >Información</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#thirdtables"
+                  >Tabla 3</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!--  -->
+    <div class="bd-cheatsheet container-fluid bg-body">
+      <section id="content">
+        <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Playas</h2>
+
+        <article class="my-3" id="typography">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Información</h3>
+            <a
+              class="d-flex align-items-center"
+              href="docs/VE-ecosistemas-PLAYAS-en-AP2024.docx"
+              >Documentación</a
+            >
+          </div>
+          <!--  -->
+          <div>
+            <div class="bd-example">
+              <p class="h1">Uso turístico en playas y programa de turismo.</p>
+            </div>
+            <div class="bd-example">
+              <blockquote class="blockquote">
+                <p>
+                  El APRM “Sur de la Isla de la Juventud”, de todas las áreas
+                  aprobadas es la que más visitantes recibe, ya sea con fines de
+                  recreación o turismo y por las visitas de los pescadores o
+                  personas al poblado de Cocodrilo teniendo en cuenta la belleza
+                  de sus playas.
+                </p>
+                <p>
+                  El área cuenta con ocho actividades aprobadas para la
+                  realización del <u>turismo de naturaleza</u> (5 recorridos y 3
+                  senderos), el más comercializado es “Jacksonville una parada
+                  en el tiempo”, dirigido a la visita del poblado de Cocodrilo,
+                  le siguen en orden “Donde el hombre descubre el mar”, que
+                  concluye en la playa el Guanal y “La vida del cocodrilo”,
+                  visita al criadero de esta especie y su entorno.
+                </p>
+                <p>
+                  Según los datos ofrecidos por la Empresa Flora y Fauna se
+                  realizaron actividades turísticas en los meses de julio y
+                  agosto del año anterior, estas fueron dirigidas hacia el
+                  Rincón del Guanal, Punta del Este, el Bosque de Sabina y los
+                  Cenotes el precio oscilaba entre $ 300.00 y $ 250.00 CUP por
+                  persona, se registraron un total de 13 950 visitantes
+                  generando un ingreso a la empresa de: $ 4 162 500.00 CUP. (Ver
+                  Tabla No. 1)
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="images">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Imágen</h3>
+            <a class="d-flex align-items-center" href="#">Descargar HD</a>
+          </div>
+          <!--  -->
+          <div>
+            <div class="bd-example">
+              <img
+                src="images/coti-730x512.jpg"
+                alt="nombrar"
+                class="bd-placeholder-img bd-placeholder-img-lg img-fluid"
+                width="100%"
+                height="100%"
+                aria-hidden="true"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <blockquote class="blockquote">
+                <p>
+                  <em><strong>Cotorra </strong></em>
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="tables">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Tabla 1</h3>
+          </div>
+          <!--  -->
+          <div>
+            <div class="bd-example">
+              <blockquote class="blockquote">
+                <p>
+                  <strong>Tabla No. 1: </strong>Actividades de la Empresa Flora
+                  y Fauna. Año 2022.
+                </p>
+              </blockquote>
+              <!--  -->
+              <div>
+                <table class="table table-sm table-bordered">
+                  <tr>
+                    <th>Excursión</th>
+                    <th>Visitantes</th>
+                    <th>Precio</th>
+                    <th>Ingresos</th>
+                  </tr>
+                  <tr>
+                    <td>Guanal</td>
+                    <td>&nbsp;2700</td>
+                    <td>$ 300.00</td>
+                    <td>$ 810 000.00</td>
+                  </tr>
+                  <tr>
+                    <td>Punta del Este</td>
+                    <td>10800</td>
+                    <td>$ 300.00</td>
+                    <td>$ 3 240 000.00</td>
+                  </tr>
+                  <tr>
+                    <td>Cenotes</td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;450</td>
+                    <td>$ 250.00</td>
+                    <td>$ 112 500.00</td>
+                  </tr>
+                  <tr>
+                    <th>TOTAL</th>
+                    <th>13 950</th>
+                    <td></td>
+                    <th>$ 4 162 500.00</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="secondtext">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Información</h3>
+            <!-- <a
+              class="d-flex align-items-center"
+              href="docs/VE-ecosistemas-PLAYAS-en-AP2024.docx"
+              >Documentación</a
+            > -->
+          </div>
+          <!--  -->
+          <div>
+            <div class="bd-example">
+              <p class="h1">Uso turístico en playas y programa de turismo.</p>
+            </div>
+            <div class="bd-example">
+              <blockquote class="blockquote">
+                <p>
+                  La Pesca al fly es una actividad turística y recreativa de
+                  (captura y suelta) que se realiza en el área, patrocinada por
+                  la Marina Marlin Cayo Largo. La misma consiste en hacer una
+                  selección de peces básicos: macabí, palometa, róbalo y sábalo.
+                  Según los datos ofrecidos por el director de la entidad se
+                  obtuvo un ingreso de $ 750.00 USD/día por los 10 trabajadores
+                  que operan dicha actividad los 30 días del mes sólo
+                  descansaron en los meses de agosto y septiembre, obteniéndose
+                  un ingreso de $2 280 000.00 USD.
+                </p>
+                <p>
+                  En toda la zona sur hasta Cayo Largo la entidad realiza otras
+                  actividades en las que participaron 12 196 visitantes
+                  obteniendo un ingreso de $ 48 407 399.15 USD, estimando que un
+                  25 % de este ingreso fue ejecutado directamente en el área se
+                  obtendría un ingreso de $ 12 101 849.79 USD. Los cálculos de
+                  las actividades se muestran en la Tabla No. 12 obteniéndose un
+                  valor económico de $348 616 038.91CUP.
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="tabledos">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Tabla 2</h3>
+          </div>
+          <!--  -->
+          <div>
+            <div class="bd-example">
+              <blockquote class="blockquote">
+                <p>
+                  <strong>Tabla No. 2: </strong>Actividades de la Marina Marlin
+                  Cayo Largo. Año 2022
+                </p>
+              </blockquote>
+              <!-- <table class="table table-sm table-bordered"> -->
+
+              <table class="table table-sm table-bordered">
+                <tr>
+                  <th>Actividad</th>
+                  <th>Precio (USD)</th>
+                  <th>Pax</th>
+                  <th>Ingresos</th>
+                </tr>
+                <tr>
+                  <td>Buceo</td>
+                  <td>6 937.22</td>
+                  <td>941</td>
+                  <td>$ 6 527 920.80</td>
+                </tr>
+                <tr>
+                  <td>Pesca de Altura</td>
+                  <td>11 297.79</td>
+                  <td>344</td>
+                  <td>3 886 440.00</td>
+                </tr>
+                <tr>
+                  <td>Media Jornada</td>
+                  <td>2 410.98</td>
+                  <td>153</td>
+                  <td>368 880.00</td>
+                </tr>
+                <tr>
+                  <td>Opcionales</td>
+                  <td>2 727.69</td>
+                  <td>308</td>
+                  <td>840 129.75</td>
+                </tr>
+                <tr>
+                  <td>Media Jornada +</td>
+                  <td>4 468.92</td>
+                  <td>622</td>
+                  <td>2 779 671.00</td>
+                </tr>
+                <tr>
+                  <td>SuperReef +</td>
+                  <td>7 414.77</td>
+                  <td>2 793</td>
+                  <td>20 709 451.20</td>
+                </tr>
+                <tr>
+                  <td>Puesta de Sol +</td>
+                  <td>6 688.93</td>
+                  <td>1 514</td>
+                  <td>10 127 040.80</td>
+                </tr>
+                <tr>
+                  <td>Sea Party</td>
+                  <td>2 834.35</td>
+                  <td>558</td>
+                  <td>1 581 570.00</td>
+                </tr>
+                <tr>
+                  <td>Centro de Rescate</td>
+                  <td>185.34</td>
+                  <td>4 849</td>
+                  <td>898 695.60</td>
+                </tr>
+                <tr>
+                  <td>Jet Experience</td>
+                  <td>6 031.58</td>
+                  <td>114</td>
+                  <td>687 600.00</td>
+                </tr>
+                <tr>
+                  <th>Subtotal</th>
+                  <td></td>
+                  <th>12 196</th>
+                  <th>$ 48 407 399.15</th>
+                </tr>
+                <tr>
+                  <td>(Estimando un 25 %)</td>
+                  <td></td>
+                  <th>3 049</th>
+                  <th>$ 12 101 849.79</th>
+                </tr>
+                <tr>
+                  <td>Pesca Fly</td>
+                  <td>750.00</td>
+                  <td></td>
+                  <td>2 280 000.00</td>
+                </tr>
+                <tr>
+                  <td>Total (USD)</td>
+                  <td></td>
+                  <td></td>
+                  <td>$ 14 381 849.79</td>
+                </tr>
+                <tr>
+                  <th>Total (CUP) *</th>
+                  <td></td>
+                  <td></td>
+                  <th>$ 348 616 038.91</th>
+                </tr>
+              </table>
+              <p>
+                <strong>Nota: </strong>(*) Se convierte la moneda a razón de $ 1
+                USD x $ 24.24 CUP.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="thirdtext">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Información</h3>
+          </div>
+          <!--  -->
+          <div>
+            <div class="bd-example">
+              <p class="h1">Uso turístico en playas y programa de turismo.</p>
+            </div>
+            <div class="bd-example">
+              <blockquote class="blockquote">
+                <p>
+                  CUBATUR y ECOTUR son instituciones que aprovechan los
+                  beneficios de APRM Sur con el turismo de naturaleza, la misma
+                  realizan la actividad de recorrido, el tema del deterioro de
+                  los viales es lo que les ha impedido llevar más clientes en
+                  los recorridos por lo que se han visto restringidos a tres
+                  transfer de muy poca capacidad (dos Maxus con una capacidad de
+                  14 pasajeros cada uno más un guía y la Gazela que admite nueve
+                  pasajeros más el guía), cada transporte tiene un precio
+                  diferente, en el caso del Maxus es de $ 29 070.00 CUP y la
+                  Gazela $ 26 780.00 CUP, estos transfer se pide por disposición
+                  de 14 horas para poder hacer el recorrido con tranquilidad ida
+                  y regreso, el precio por pasajero es acorde a la cantidad de
+                  personas que viajen en el recorrido. Ambas entidades se han
+                  encadenado con los trabajadores por cuenta propia que realizan
+                  la actividad de transporte y con otros de la zona para la
+                  oferta de almuerzos y meriendas para los visitantes y hasta de
+                  alojamiento para el que desee quedarse unos días.
+                </p>
+                <p>
+                  <u>CUBATUR</u> utiliza el recorrido (Pasa día al Sur), al
+                  cierre del año 2022 visitaron el área 115 personas por esta
+                  modalidad obteniéndose un ingreso de $ 330 520.00 CUP,
+                  aportando a la Empresa Flora y Fauna $ 120.00 por visitantes
+                  los cuales son destinados para la conservación del área
+                  representando un ingreso para la entidad de $ 13 800.00.
+                </p>
+                <p>
+                  <u>ECOTUR</u> oferta a la población pinera el recorrido de
+                  “Jacksonville una parada en el tiempo”, dirigido a la visita
+                  del poblado de Cocodrilo, según los datos ofrecidos al cierre
+                  del año 2022, realizaron este recorrido 98 personas
+                  obteniéndose un ingreso por esta modalidad de $ 13 720.00,
+                  aportando a la Empresa Flora y Fauna el 120 por visitantes lo
+                  que representan $ 11 760.00 los cuales son destinados para la
+                  conservación. Los cálculos de la investigación se muestran en
+                  la Tabla No. 3 obteniéndose un valor económico de $353 122
+                  778.91 CUP.
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="thirdtables">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Tabla 3</h3>
+          </div>
+          <!--  -->
+          <div>
+            <div class="bd-example">
+              <blockquote class="blockquote">
+                <p>
+                  <strong>Tabla No. 3: </strong>Valor económico del servicio
+                  ambiental “Uso turístico en playa”.
+                </p>
+              </blockquote>
+              <!--  -->
+              <div>
+                <table class="table table-sm table-bordered">
+                  <tr>
+                    <th>Entidad</th>
+                    <th>Ingresos CUP</th>
+                  </tr>
+                  <tr>
+                    <td>Flora y Fauna</td>
+                    <td>$ 4 162 500.00</td>
+                  </tr>
+                  <tr>
+                    <td>Marlin Cayo Largo</td>
+                    <td>$ 348 616 038.91</td>
+                  </tr>
+                  <tr>
+                    <td>CUBATUR</td>
+                    <td>$ 330 520.00</td>
+                  </tr>
+                  <tr>
+                    <td>ECOTUR</td>
+                    <td>$ 13 720.00</td>
+                  </tr>
+                  <tr>
+                    <th>TOTAL</th>
+                    <th>$ 353 122 778.91</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+    <!--  -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/cheatsheet.js"></script>
+  </body>
+</html>
