@@ -10,35 +10,35 @@
     <meta name="author" content="Guillermo Toranzo Pérez" />
     <link rel="stylesheet" type="text/css" href="css/portada.css" />
     <link rel="icon" type="image/png" href="images/faviconX400.png" />
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="fontawesome-free-6.5.2-web/css/all.min.css" rel="stylesheet" />
   </head>
   <body>
     <script language="JavaScript">
       function go() {
-        window.location = "menu.html";
+        window.location.href = "menu.html";
       }
+      setTimeout(go, 5000);
     </script>
     <figure class="fondo" onclick="go()">
       <h3 style="flex-basis: 100%; text-align: center">
         Isla de la Juventud, un Paraiso Escondido.
       </h3>
-      <!-- spinner -->
+
       <div
-        class="p-5 d-flex flex-column justify-content-center align-items-center"
+        class="d-flex justify-content-center align-items-center"
+        style="height: 100vh"
       >
-        <div class="spinner-border text-success" role="status">
-          <span class="sr-only">Loading...</span>
+        <div class="p-5 text-center">
+          <div class="spinner-border text-dark" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="small pt-2 text-dark">Cargando…</div>
         </div>
-        <div class="small pt-2 text-success">Loading…</div>
       </div>
-      <!-- END spinner -->
     </figure>
-    <div
-      class="p-5 d-flex flex-column justify-content-center align-items-center"
-    >
-      <div class="spinner-border text-success" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-      <div class="small pt-2 text-success">Loading…</div>
-    </div>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
