@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Turismo de Naturaleza</title>
+    <meta charset="utf-8" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="turnat/css/bootstrap.min.css"
+    />
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" type="text/css" href="turnat/css/font-awesome.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="turnat/dist/leaflet.awesome-markers.css"
+    />
+    <link
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+      href="turnat/css/materialdesignicons.css"
+    />
+    <link
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+      href="turnat/css/materialdesignicons.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="turnat/leaflet/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="turnat/css/own_style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="turnat/css/L.Control.Sidebar.css"
+    />
+    <link rel="stylesheet" type="text/css" href="turnat/css/easy-button.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="turnat/fullscreen/leaflet.fullscreen.css"
+    />
+
+    <style type="text/css">
+      .combo {
+        float: right;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-left: 60px;
+        background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        display: block;
+        font: 14px/16px Arial, Helvetica, sans-serif;
+        padding: 6px 8px;
+        cursor: auto;
+        clear: both;
+        pointer-events: auto;
+        position: relative;
+        z-index: 800;
+      }
+      .btn {
+        border: 1px solid #d5d5d5;
+        border-radius: 8px;
+        background-image: linear-gradient(#fcfcfc, #eee);
+        color: #333;
+        cursor: pointer;
+        font: 14px/16px Arial, Helvetica, sans-serif;
+        padding: 6px 12px;
+        vertical-align: middle;
+      }
+      .aligncenter {
+        display: block;
+        margin: 0 auto 1.2rem;
+      }
+    </style>
+    <!--       <link rel="shortcut icon" href="img/ico/logo_emtat-48x48.png" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  --></head>
+  <body>
+    <div id="map" style="background-color: #abdef2">
+      <div id="combo" class="combo leaflet-right">
+        <form>
+          <i class="mdi mdi-bus fa-lg"></i>
+          <select name="rutas" id="rutas">
+            <option value="default">---Rutas---</option>
+            <option value="1">Cocodrilera</option>
+            <option value="2">Cueva Leclerc</option>
+            <option value="3">Descubre el Mar</option>
+            <option value="4">Dunas</option>
+            <option value="5">Entre Pinos...</option>
+            <option value="6">Jackson Ville</option>
+            <option value="7">Jungla</option>
+            <option value="8">Punta Este</option>
+            <option value="9">Santuario Cotorras</option>
+            <option value="10">Sierra Cañada</option>
+          </select>
+          <input
+            type="button"
+            class="btn"
+            name="Boton1"
+            value="Recorrido"
+            onclick="animar()"
+          />
+        </form>
+      </div>
+      <div id="horario"></div>
+      <div id="ayuda"></div>
+      <div id="contactos"></div>
+    </div>
+
+    <script src="turnat/leaflet/leaflet.js"></script>
+    <script src="turnat/js/leaflet-hash.js"></script>
+    <script src="turnat/js/Autolinker.min.js"></script>
+    <script src="turnat/plugin/L.Polyline.SnakeAnim.js"></script>
+    <script src="turnat/plugin/L.Control.Sidebar.js"></script>
+    <script src="turnat/plugin/easy-button.js"></script>
+    <script src="turnat/fullscreen/Leaflet.fullscreen.min.js"></script>
+    <!-- awesome -->
+    <script src="turnat/dist/leaflet.awesome-markers.js"></script>
+
+    <script src="turnat/data/exp_paradastodas.js"></script>
+    <script src="turnat/data/exp_rutas.js"></script>
+    <script src="turnat/data/Controlador.js"></script>
+  </body>
+</html>
