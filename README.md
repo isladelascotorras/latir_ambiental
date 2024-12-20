@@ -23,4 +23,4 @@ Es un proyecto web sobre la Tarea Vida en el Municipio Especial de la Isla de la
 
 ### Código QR para acceder a la página.
 
-[![image](https://isladelascotorras.github.io/latir_ambiental/images/la-color.png)](https://isladelascotorras.github.io/latir_ambiental/images/la-color.png)
+[![image](https://isladelascotorras.github.io/latir_ambiental/images/la-color.png)](https://isladelascotorras.github.io/latir_ambiental/images/qrcode-monkey.png)
