@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mapa de Rutas Turnat</title>
+    <link rel="stylesheet" type="text/css" href="leaflet/leaflet.css" />
+    <script src="leaflet/leaflet.js"></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        height: 100vh; /* Altura completa de la ventana */
+        margin: 0; /* Elimina el margen por defecto */
+      }
+      #map {
+        width: 80%; /* Ancho del div del mapa */
+        height: 80%; /* Altura del div del mapa */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <script>
+      // Inicializa el mapa y establece su vista inicial
+      var map = L.map("map").fitBounds([
+        [21.6610729474, -82.9455969459],
+        [21.9811843475, -82.4582417155],
+      ]);
+
+      // Capa de teselas de OpenStreetMap https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
+      L.tileLayer("./img/maps/{z}/{x}/{y}.jpg", {
+        maxZoom: 18,
+        minZoom: 10,
+        Zoom: 15,
+        attribution: "© OSM",
+      }).addTo(map);
+    </script>
+  </body>
+</html>

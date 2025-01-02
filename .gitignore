@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+.vscode/
+.idea/
+
+# Build files
+img/
+img/maps
+salva.zip
+
+# Logs
+*debug.log
+
+#enviroment
+.env

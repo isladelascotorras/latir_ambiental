@@ -13,12 +13,12 @@ var map = L.map("map", {
 ]);
 var hash = new L.Hash(map);
 var additional_attrib =
-  '<a href="https://gtoranzo.github.io/gtoranzo-web/" title="Guillermo Toranzo"><img src="data/Log.png"> Turnat </a>';
+  '<a href="https://isladelascotorras.github.io/latir_ambiental/" title="Latir Ambiental en Isla de la Juventud"><img src="data/turnat.png" alt="Turnat" width="60" height="15"></a>';
 var feature_group = new L.featureGroup([]);
 var route = new L.featureGroup([]);
-
+// http://localhost/maps/{z}/{x}/{y}.jpg
 //http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
-var basemap_0 = L.tileLayer("http://localhost/maps/{z}/{x}/{y}.jpg", {
+var basemap_0 = L.tileLayer("./img/maps/{z}/{x}/{y}.jpg", {
   attribution: additional_attrib,
 });
 basemap_0.addTo(map);
@@ -58,6 +58,7 @@ var exp_grupoempresarialJSON = new L.geoJson(exp_grupoempresarial, {
 feature_group.addLayer(exp_grupoempresarialJSON);
 feature_group.addTo(map);
 //-------------------------------------------------------
+// icons
 var horario = L.control.sidebar("horario", {
   closeButton: true,
   title: "Horario",
@@ -84,7 +85,7 @@ map.on("click", function () {
   ayuda.hide();
   contacto.hide();
 });
-// <i class="mdi mdi-bus fa-lg "></i>
+// -(<i class="mdi mdi-bus fa-lg "></i>);
 L.easyButton(
   '<i class="mdi mdi-information-variant fa-lg "></i>',
   function (btn, map) {
@@ -114,7 +115,7 @@ L.easyButton('<i class="mdi mdi-contacts fa-lg "></i>', function (btn, map) {
   );
   contacto.show();
 }).addTo(map);
-
+//----------------------------------------------------------------
 function pop_Ruta(feature, layer) {
   var popupContent =
     '<table><tr><th scope="row">Ruta:</th><td>' +
@@ -132,76 +133,76 @@ function doStyle() {
   };
 }
 
-var json_cocodrilera_0 = new L.geoJson(cocodrilera_i, {
+var json_cocodrilera_1 = new L.geoJson(cocodrilera_i, {
   onEachFeature: pop_Ruta,
   style: doStyle,
   color: "#7d64a1",
 });
-feature_group.addLayer(json_cocodrilera_0);
+feature_group.addLayer(json_cocodrilera_1);
 
-var json_cuevaleclerc_1 = new L.geoJson(cuevaleclerc_i, {
+var json_cuevaleclerc_2 = new L.geoJson(cuevaleclerc_i, {
   onEachFeature: pop_Ruta,
   style: doStyle,
   color: "#9d8d65",
 });
-feature_group.addLayer(json_cuevaleclerc_1);
+feature_group.addLayer(json_cuevaleclerc_2);
 
-var json_descubreelmar_2 = new L.geoJson(descubreelmar_i, {
+var json_descubreelmar_3 = new L.geoJson(descubreelmar_i, {
   onEachFeature: pop_Ruta,
   style: doStyle,
   color: "#475a82",
 });
-feature_group.addLayer(json_descubreelmar_2);
+feature_group.addLayer(json_descubreelmar_3);
 
-var json_duna_3 = new L.geoJson(duna_i, {
+var json_duna_4 = new L.geoJson(duna_i, {
   onEachFeature: pop_Ruta,
   style: doStyle,
   color: "#a17685",
 });
-feature_group.addLayer(json_duna_3);
+feature_group.addLayer(json_duna_4);
 
-var json_entrepinos_4 = new L.geoJson(entrepinos_i, {
+var json_entrepinos_5 = new L.geoJson(entrepinos_i, {
   onEachFeature: pop_Ruta,
   style: doStyle,
   color: "#c7a568",
 });
-feature_group.addLayer(json_entrepinos_4);
+feature_group.addLayer(json_entrepinos_5);
 
-var json_jacksonville_5 = new L.geoJson(jacksonville_i, {
+var json_jacksonville_6 = new L.geoJson(jacksonville_i, {
   onEachFeature: pop_Ruta,
   color: "#b7eeab",
   style: doStyle,
 });
-feature_group.addLayer(json_jacksonville_5);
+feature_group.addLayer(json_jacksonville_6);
 
-var json_jungla_6 = new L.geoJson(jungla_i, {
+var json_jungla_7 = new L.geoJson(jungla_i, {
   onEachFeature: pop_Ruta,
   color: "#c72cad",
   style: doStyle,
 });
-feature_group.addLayer(json_jungla_6);
+feature_group.addLayer(json_jungla_7);
 
-var json_puntaeste_7 = new L.geoJson(puntaeste_i, {
+var json_puntaeste_8 = new L.geoJson(puntaeste_i, {
   onEachFeature: pop_Ruta,
   color: "#543c90",
   style: doStyle,
 });
-feature_group.addLayer(json_puntaeste_7);
+feature_group.addLayer(json_puntaeste_8);
 
-var json_santuariocotorras_8 = new L.geoJson(santuariocotorras_i, {
+var json_santuariocotorras_9 = new L.geoJson(santuariocotorras_i, {
   onEachFeature: pop_Ruta,
   color: "#885411",
   style: doStyle,
 });
-feature_group.addLayer(json_santuariocotorras_8);
+feature_group.addLayer(json_santuariocotorras_9);
 
-var json_sierracaada_9 = new L.geoJson(sierracaada_i, {
+var json_sierracaada_10 = new L.geoJson(sierracaada_i, {
   onEachFeature: pop_Ruta,
   color: "#18d31f",
   style: doStyle,
 });
-feature_group.addLayer(json_sierracaada_9);
-
+feature_group.addLayer(json_sierracaada_10);
+// ------------------------------------------------------
 // animar
 feature_group.addTo(map);
 function animar() {
@@ -217,101 +218,101 @@ function animar() {
   switch (document.forms[0].rutas.value) {
     case "1":
       ruta(
-        json_cocodrilera_0,
+        json_cocodrilera_1,
         cocodrilera_i,
         cocodrilera_p,
         new LeafIcon({ iconUrl: "leaflet/images/marker-icon-2x.png" }),
-        nparadas.P_json_cocodrilera_0
+        nparadas.P_json_cocodrilera_1
       );
       break;
 
     case "2":
       ruta(
-        json_cuevaleclerc_1,
+        json_cuevaleclerc_2,
         cuevaleclerc_i,
         cuevaleclerc_p,
         new LeafIcon({ iconUrl: "leaflet/images/marker-icon-2x.png" }),
-        nparadas.P_json_cuevaleclerc_1
+        nparadas.P_json_cuevaleclerc_2
       );
       break;
 
     case "3":
       ruta(
-        json_descubreelmar_2,
+        json_descubreelmar_3,
         descubreelmar_i,
         descubreelmar_p,
         new LeafIcon({ iconUrl: "leaflet/images/marker-icon-2x.png" }),
-        nparadas.P_json_descubreelmar_2
+        nparadas.P_json_descubreelmar_3
       );
       break;
 
     case "4":
       ruta(
-        json_duna_3,
+        json_duna_4,
         duna_i,
         duna_p,
         new LeafIcon({ iconUrl: "leaflet/images/marker-icon-2x.png" }),
-        nparadas.P_json_duna_3
+        nparadas.P_json_duna_4
       );
       break;
 
     case "5":
       ruta(
-        json_entrepinos_4,
+        json_entrepinos_5,
         entrepinos_i,
         entrepinos_p,
         new LeafIcon({ iconUrl: "leaflet/images/marker-icon-2x.png" }),
-        nparadas.P_json_entrepinos_4
+        nparadas.P_json_entrepinos_5
       );
       break;
 
     case "6":
       ruta(
-        json_jacksonville_5,
+        json_jacksonville_6,
         jacksonville_i,
         jacksonville_p,
         new LeafIcon({ iconUrl: "leaflet/images/marker-icon-2x.png" }),
-        nparadas.P_json_jacksonville_5
+        nparadas.P_json_jacksonville_6
       );
       break;
 
     case "7":
       ruta(
-        json_jungla_6,
+        json_jungla_7,
         jungla_i,
         jungla_p,
         new LeafIcon({ iconUrl: "leaflet/images/marker-icon-2x.png" }),
-        nparadas.P_json_jungla_6
+        nparadas.P_json_jungla_7
       );
       break;
 
     case "8":
       ruta(
-        json_puntaeste_7,
+        json_puntaeste_8,
         puntaeste_i,
         puntaeste_p,
         new LeafIcon({ iconUrl: "leaflet/images/marker-icon-2x.png" }),
-        nparadas.P_json_puntaeste_7
+        nparadas.P_json_puntaeste_8
       );
       break;
 
     case "9":
       ruta(
-        json_santuariocotorras_8,
+        json_santuariocotorras_9,
         santuariocotorras_i,
         santuariocotorras_p,
         new LeafIcon({ iconUrl: "leaflet/images/marker-icon-2x.png" }),
-        nparadas.P_json_santuariocotorras_8
+        nparadas.P_json_santuariocotorras_9
       );
       break;
 
     case "10":
       ruta(
-        json_sierracaada_9,
+        json_sierracaada_10,
         sierracaada_i,
         sierracaada_p,
         new LeafIcon({ iconUrl: "leaflet/images/marker-icon-2x.png" }),
-        nparadas.P_json_sierracaada_9
+        nparadas.P_json_sierracaada_10
       );
       break;
 
