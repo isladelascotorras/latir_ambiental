@@ -57,26 +57,25 @@
         }
         loadLicenseFile();
       });
-
       // Función para cargar el contenido del archivo
-      function cargarContenidoTxt() {
-        fetch("LICENSE")
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error("No se pudo cargar el archivo");
-            }
-            return response.text();
-          })
-          .then((texto) => {
-            document.getElementById("contenido-txt").textContent = texto;
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-            document.getElementById("contenido-txt").textContent =
-              "Error al cargar el archivo.";
-          });
-      }
-      window.onload = cargarContenidoTxt;
+      // function cargarContenidoTxt() {
+      //   fetch("LICENSE")
+      //     .then((response) => {
+      //       if (!response.ok) {
+      //         throw new Error("No se pudo cargar el archivo");
+      //       }
+      //       return response.text();
+      //     })
+      //     .then((texto) => {
+      //       document.getElementById("contenido-txt").textContent = texto;
+      //     })
+      //     .catch((error) => {
+      //       console.error("Error:", error);
+      //       document.getElementById("contenido-txt").textContent =
+      //         "Error al cargar el archivo.";
+      //     });
+      // }
+      // window.onload = cargarContenidoTxt;
     </script>
   </head>
   <body class="bg-light">
@@ -251,7 +250,6 @@
                 <div id="fileContent"></div>
               </blockquote>
             </div>
-            <div id="contenido-txt"></div>
           </div>
         </article>
       </section>
