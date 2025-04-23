@@ -176,6 +176,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
+                id="carousel-image-1"
                 src="images/galeria/20221222_103848-B.jpg"
                 alt="Playa del Hotel Colony"
                 class="bd-placeholder-img"
@@ -203,6 +204,7 @@
             </div>
             <div class="carousel-item">
               <img
+                id="carousel-image-2"
                 src="images/galeria/Sierra-Caballos.jpg"
                 alt="Playa del Hotel Colony"
                 class="bd-placeholder-img"
@@ -227,6 +229,7 @@
             </div>
             <div class="carousel-item">
               <img
+                id="carousel-image-3"
                 src="images/galeria/Sierra-Caballos.jpg"
                 alt="Playa del Hotel Colony"
                 class="bd-placeholder-img"
@@ -253,6 +256,42 @@
               </div>
             </div>
           </div>
+
+          <script>
+            function updateCarouselImages() {
+              // Define los pares de imágenes para PC y móvil
+              const images = [
+                {
+                  id: "carousel-image-1",
+                  pc: "images/galeria/20221222_103848-B.jpg",
+                  mobile: "images/galeria/Julio.jpg",
+                },
+                {
+                  id: "carousel-image-2",
+                  pc: "images/galeria/Sierra-Caballos.jpg",
+                  mobile: "images/galeria/cayo3.jpg",
+                },
+                {
+                  id: "carousel-image-3",
+                  pc: "images/galeria/playa-paraiso.jpg",
+                  mobile: "images/galeria/paraiso-mobile.jpg",
+                },
+              ];
+
+              const isMobile = window.innerWidth <= 768;
+
+              images.forEach((img) => {
+                const el = document.getElementById(img.id);
+                if (el) {
+                  el.src = isMobile ? img.mobile : img.pc;
+                }
+              });
+            }
+
+            window.addEventListener("load", updateCarouselImages);
+            window.addEventListener("resize", updateCarouselImages);
+          </script>
+
           <button
             class="carousel-control-prev"
             type="button"

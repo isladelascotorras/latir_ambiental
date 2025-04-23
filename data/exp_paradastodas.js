@@ -27,5 +27,5 @@ var nparadas = {
 
   P_json_santuariocotorras_9: [["inicial"], ["intermedio"], ["final"]],
 
-  P_json_sierracaada_10: [["inicial"], ["intermedio"], ["final"]],
+  P_json_sierracanyada_10: [["inicial"], ["intermedio"], ["final"]],
 };

@@ -11,7 +11,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="dist/leaflet.awesome-markers.css"
+      href="leaflet/leaflet.awesome-markers.css"
     />
     <link
       media="all"
@@ -33,7 +33,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="fullscreen/leaflet.fullscreen.css"
+      href="leaflet/fullscreen/leaflet.fullscreen.css"
     />
 
     <style type="text/css">
@@ -79,16 +79,18 @@
           <i class="mdi mdi-bus fa-lg"></i>
           <select name="rutas" id="rutas">
             <option value="default">---Rutas---</option>
-            <option value="1">Cocodrilera</option>
-            <option value="2">Cueva Leclerc</option>
-            <option value="3">Descubre el Mar</option>
-            <option value="4">Dunas</option>
-            <option value="5">Entre Pinos...</option>
-            <option value="6">Jackson Ville</option>
+            <optgroup label="Excursiones"></optgroup>
+            <option value="1">Descubre el Mar</option>
+            <option value="2">Entre Pinos</option>
+            <option value="3">Jackson Ville</option>
+            <option value="4">Punta Este</option>
+            <optgroup label="Senderos Ecológicos"></optgroup>
+            <option value="5">Santuario de Cotorras</option>
+            <option value="6">Sierra Cañada</option>
             <option value="7">Jungla</option>
-            <option value="8">Punta Este</option>
-            <option value="9">Santuario Cotorras</option>
-            <option value="10">Sierra Cañada</option>
+            <option value="8">Cueva Leclerc</option>
+            <option value="9">Cocodrilera</option>
+            <option value="10">Dunas</option>
           </select>
           <input
             type="button"
@@ -107,16 +109,15 @@
     <script src="leaflet/leaflet.js"></script>
     <script src="js/leaflet-hash.js"></script>
     <script src="js/Autolinker.min.js"></script>
-    <script src="plugin/L.Polyline.SnakeAnim.js"></script>
-    <script src="plugin/L.Control.Sidebar.js"></script>
-    <script src="plugin/easy-button.js"></script>
-    <script src="fullscreen/Leaflet.fullscreen.min.js"></script>
+    <script src="leaflet/L.Polyline.SnakeAnim.js"></script>
+    <script src="leaflet/L.Control.Sidebar.js"></script>
+    <script src="leaflet/easy-button.js"></script>
+    <script src="leaflet/fullscreen/Leaflet.fullscreen.min.js"></script>
     <!-- awesome -->
-    <script src="dist/leaflet.awesome-markers.js"></script>
+    <script src="leaflet/leaflet.awesome-markers.js"></script>
 
     <script src="data/exp_paradastodas.js"></script>
     <script src="data/exp_rutas.js"></script>
-    <script src="data/entrepinos.js"></script>
     <script src="data/Controlador.js"></script>
   </body>
 </html>
