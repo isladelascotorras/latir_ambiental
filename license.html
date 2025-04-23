@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Guillermo Toranzo Perez" />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>IslaJ · Latir Ambiental</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="fontawesome-free-6.5.2-web/css/all.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/cheatsheet.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="images/faviconX400.png" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const fileContentDiv = document.getElementById("fileContent");
+        // const pathInfoDiv = document.getElementById("pathInfo");
+        // const baseUrl = window.location.href.replace(/\/[^\/]*$/, "/");
+        const fileName = "LICENSE";
+        // const fileUrl = baseUrl + fileName;
+
+        function loadLicenseFile() {
+          fetch(fileName)
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(`No se pudo cargar el archivo ${fileName}`);
+              }
+              return response.text();
+            })
+            .then((text) => {
+              fileContentDiv.textContent = text;
+            }) // Asegúrate de que el archivo ${fileName} existe en el directorio ${fileUrl} .
+            .catch((error) => {
+              fileContentDiv.textContent = `Error: ${error.message}\n\n.`;
+            });
+        }
+        loadLicenseFile();
+      });
+
+      // Función para cargar el contenido del archivo
+      function cargarContenidoTxt() {
+        fetch("LICENSE")
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("No se pudo cargar el archivo");
+            }
+            return response.text();
+          })
+          .then((texto) => {
+            document.getElementById("contenido-txt").textContent = texto;
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            document.getElementById("contenido-txt").textContent =
+              "Error al cargar el archivo.";
+          });
+      }
+      window.onload = cargarContenidoTxt;
+    </script>
+  </head>
+  <body class="bg-light">
+    <!-- Corregir header -->
+    <header
+      class="bd-header bg-light py-3 d-flex align-items-stretch border-bottom border-light"
+    >
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light rounded"
+        aria-label="Eleventh navbar example"
+      >
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="https://guitoranzo.github.io/latir_ambiental/"
+          >
+            <img
+              src="images/faviconX400.png"
+              alt="Bootstrap"
+              width="32"
+              height="32"
+            />
+            Latir ambiental</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample09"
+            aria-controls="navbarsExample09"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample09">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!--  -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="dropdown09"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Áreas Protegidas</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                  <li>
+                    <a class="dropdown-item" href="bosques.html">Bosques</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="manglares.html">Manglares</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="playas.html">Playas</a>
+                  </li>
+                </ul>
+              </li>
+              <!--  -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="dropdown09"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Nuevas Legislaciones</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="docs/legislaciones/Ley_150-goc-No87-2023.pdf"
+                      >Ley 150</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="docs/legislaciones/Ley_155-goc-No84-2023.pdf"
+                      >Ley 155</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="docs/legislaciones/DL_AP_concilado_DJ_ANPP-11.9.23.pdf"
+                      >DL-AP concilado DJ-ANPP</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!--  -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="dropdown09"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Galería</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                  <li>
+                    <a class="dropdown-item" href="afiches.html">Afiches</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="galeria.html">Fotos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="videos.html">Videos</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--  -->
+    <aside
+      class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2"
+    >
+      <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">En esta pagina</h2>
+      <nav class="small" id="toc">
+        <ul class="list-unstyled">
+          <li class="my-2">
+            <button
+              class="btn d-inline-flex align-items-center collapsed"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#contents-collapse"
+              aria-controls="contents-collapse"
+            >
+              Contenido
+            </button>
+            <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#typography"
+                  >License</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!--  -->
+    <div class="bd-cheatsheet container-fluid bg-body">
+      <section id="content">
+        <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">License</h2>
+
+        <article class="my-3" id="typography">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Información</h3>
+            <a class="d-flex align-items-center" href="LICENSE"
+              >Documentación</a
+            >
+          </div>
+          <!--  -->
+          <div>
+            <div class="bd-example">
+              <p class="h1">License:</p>
+            </div>
+            <div class="bd-example">
+              <blockquote class="blockquote">
+                <div id="fileContent"></div>
+              </blockquote>
+            </div>
+            <div id="contenido-txt"></div>
+          </div>
+        </article>
+      </section>
+    </div>
+    <!--  -->
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/cheatsheet.js"></script>
+  </body>
+</html>
