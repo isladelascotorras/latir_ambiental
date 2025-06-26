@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Guillermo Toranzo Perez" />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>Martí · Latir Ambiental</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="fontawesome-free-6.5.2-web/css/all.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .table-bordered {
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+      .table-bordered th,
+      .table-bordered td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/cheatsheet.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="images/faviconX400.png" />
+  </head>
+  <body class="bg-light">
+    <!-- Corregir header -->
+    <header
+      class="bd-header bg-light py-3 d-flex align-items-stretch border-bottom border-light"
+    >
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light rounded"
+        aria-label="Eleventh navbar example"
+      >
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="https://guitoranzo.github.io/latir_ambiental/"
+          >
+            <img
+              src="images/faviconX400.png"
+              alt="Bootstrap"
+              width="32"
+              height="32"
+            />
+            Latir ambiental</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample09"
+            aria-controls="navbarsExample09"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample09">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!--  -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="dropdown09"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Áreas Protegidas</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                  <li>
+                    <a class="dropdown-item" href="bosques.html">Bosques</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="manglares.html">Manglares</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="playas.html">Playas</a>
+                  </li>
+                </ul>
+              </li>
+              <!--  -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="dropdown09"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Nuevas Legislaciones</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="docs/legislaciones/Ley_150-goc-No87-2023.pdf"
+                      >Ley 150</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="docs/legislaciones/Ley_155-goc-No84-2023.pdf"
+                      >Ley 155</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="docs/legislaciones/DL_AP_concilado_DJ_ANPP-11.9.23.pdf"
+                      >DL-AP concilado DJ-ANPP</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!--  -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="dropdown09"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Galería</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                  <li>
+                    <a class="dropdown-item" href="afiches.html">Afiches</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="galeria.html">Fotos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="videos.html">Videos</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--  -->
+    <aside
+      class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2"
+    >
+      <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">En esta pagina</h2>
+      <nav class="small" id="toc">
+        <ul class="list-unstyled">
+          <li class="my-2">
+            <button
+              class="btn d-inline-flex align-items-center collapsed"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              data-bs-target="#contents-collapse"
+              aria-controls="contents-collapse"
+            >
+              Contenido
+            </button>
+            <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#typography"
+                  >Información</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#images"
+                  >Imágen</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#secondtext"
+                  >Información</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-inline-flex align-items-center rounded"
+                  href="#thirdtext"
+                  >Información</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="bd-cheatsheet container-fluid bg-body">
+      <section id="content">
+        <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Martí</h2>
+
+        <article class="my-3" id="typography">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Información</h3>
+            <a class="d-flex align-items-center" href="#">Documentación</a>
+          </div>
+          <!--  -->
+          <div>
+            <div class="bd-example">
+              <p class="h1">Biodiversidad y Ciencia en las áreas protegidas.</p>
+            </div>
+            <div class="bd-example">
+              <blockquote class="blockquote">
+                <p>“La naturaleza inspira, enseña y ennoblece.” José Marí</p>
+              </blockquote>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="images">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Imágen</h3>
+            <a
+              class="d-flex align-items-center"
+              href="images/apostol/restaurada.jpg"
+              >Descargar</a
+            >
+          </div>
+          <div>
+            <div class="bd-example">
+              <img
+                src="images/apostol/restaurada.jpg"
+                alt="José Martí"
+                class="bd-placeholder-img bd-placeholder-img-lg img-fluid"
+                width="100%"
+                height="100%"
+                aria-hidden="true"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              />
+              <blockquote class="blockquote">
+                <p>
+                  <em><strong>José Martí </strong></em>
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="secondtext">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Información</h3>
+          </div>
+          <div>
+            <div class="bd-example">
+              <p class="h1">Martí y la Naturaleza.</p>
+            </div>
+            <div class="bd-example">
+              <blockquote class="blockquote">
+                <p>
+                  Objetivo: Explorar el pensamiento martiano sobre la naturaleza
+                  como valor espiritual, político y cultural.
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="thirdtext">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Información</h3>
+          </div>
+          <div>
+            <div class="bd-example">
+              <p class="h1">Áreas Protegidas y Comunidad.</p>
+            </div>
+            <div class="bd-example">
+              <blockquote class="blockquote">
+                <p>
+                  Objetivo: Mostrar cómo las áreas protegidas se alinean con la
+                  visión martiana y su rol como espacios de participación y
+                  cuidado colectivo. - Mapa dinámico de áreas protegidas. -
+                  Relatos comunitarios en audio o video (testimonios, saberes
+                  locales).
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="fourthtext">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Información</h3>
+          </div>
+          <div>
+            <div class="bd-example">
+              <p class="h1">Ciencia y Conservación.</p>
+            </div>
+            <div class="bd-example">
+              <blockquote class="blockquote">
+                <p>
+                  Objetivo: Visualizar la ciencia como herramienta martiana para
+                  el bien común y para preservar la biodiversidad. Infografías
+                  de conceptos clave (biodiversidad,). Resultados científicos
+                  explicados de forma clara. Experimentos o retos ciudadanos que
+                  inviten a la acción.
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="fifthtext">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Información</h3>
+          </div>
+          <div>
+            <div class="bd-example">
+              <p class="h1">Ciencia y Conservación.</p>
+            </div>
+            <div class="bd-example">
+              <blockquote class="blockquote">
+                <p>
+                  Objetivo: Visualizar la ciencia como herramienta martiana para
+                  el bien común y para preservar la biodiversidad. Infografías
+                  de conceptos clave (biodiversidad,). Resultados científicos
+                  explicados de forma clara. Experimentos o retos ciudadanos que
+                  inviten a la acción.
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="seventhtext">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Información</h3>
+          </div>
+          <div>
+            <div class="bd-example">
+              <p class="h1">Participa y Transforma.</p>
+            </div>
+            <div class="bd-example">
+              <blockquote class="blockquote">
+                <p>
+                  Objetivo: Invitar al usuario a convertirse en protagonista del
+                  cambio. Herramientas: - Módulo para registrar ideas o
+                  proyectos locales. - Espacio de descarga de materiales
+                  educativos. - Foro moderado para compartir experiencias y
+                  preguntas.
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="fifthtext">
+          <div
+            class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"
+          >
+            <h3>Información</h3>
+          </div>
+          <div>
+            <div class="bd-example">
+              <p class="h1">Memoria y Futuro</p>
+            </div>
+            <div class="bd-example">
+              <blockquote class="blockquote">
+                <p>
+                  Objetivo: Cerrar el recorrido con una visión esperanzadora,
+                  conectando el legado de Martí con las generaciones futuras.
+                  Propuesta: - Mural digital con ilustraciones, frases y nombres
+                  de contribuyentes al sitio. - Calendario de eventos o acciones
+                  ambientales.
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+    <!--  -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/cheatsheet.js"></script>
+  </body>
+</html>
