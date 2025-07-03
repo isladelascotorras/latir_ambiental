@@ -1,4 +1,4 @@
-# [Latir Ambiental](https://github.com/isladelascotorras/latir_ambiental) 🌱
+# [Latir Ambiental](https://isladelascotorras.github.io/latir_ambiental/) 🌱
 
 Proyecto web educativo sobre la **Tarea Vida** en el Municipio Especial de la **Isla de la Juventud**, enfocado en conservación ambiental, áreas protegidas y legislación.
 
