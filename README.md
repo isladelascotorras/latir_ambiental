@@ -17,7 +17,7 @@ Proyecto web educativo sobre la **Tarea Vida** en el Municipio Especial de la **
 [FortAwesome-url]: https://fontawesome.com/v6/docs/web/setup/get-started
 [mit-badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [mit-url]: https://github.com/isladelascotorras/latir_ambiental/blob/main/LICENSE
-[actions-badge]: https://github.com/isladelascotorras/latir_ambiental/workflows/CI/badge.svg
+[actions-badge]: https://github.com/w3reality/three-geo/workflows/CI/badge.svg
 [actions-url]: https://github.com/isladelascotorras/latir_ambiental/actions
 
 ## 📱 Acceso Rápido
