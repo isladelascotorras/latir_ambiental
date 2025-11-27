@@ -65,9 +65,34 @@
         padding: 6px 12px;
         vertical-align: middle;
       }
-      .aligncenter {
+      /* .aligncenter {
         display: block;
         margin: 0 auto 1.2rem;
+      } */
+
+      /* Estilos para móviles (ancho ≤ 768px) */
+      @media (max-width: 768px) {
+        .combo {
+          float: none;
+          margin: 10px auto 0;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          width: 90%;
+          max-width: 300px;
+          text-align: center;
+        }
+
+        .combo select,
+        .combo input.btn {
+          width: 100%;
+          margin-top: 8px;
+          box-sizing: border-box;
+        }
+
+        .combo i {
+          display: block;
+          margin-bottom: 8px;
+        }
       }
     </style>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1" />

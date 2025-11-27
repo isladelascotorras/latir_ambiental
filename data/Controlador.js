@@ -111,7 +111,7 @@ L.easyButton('<i class="mdi mdi-contacts fa-lg "></i>', function (btn, map) {
   horario.hide();
   ayuda.hide();
   contacto.setContent(
-    '<table style="text-align: center; font: 16px Arial,Helvetica,sans-serif;" width=326><tr><td><h2>Contáctenos</h2></td></tr><tr><td><img class="aligncenter" src="data/turnat.png"></td></tr><tr><td>Especialista en Investigación, Innovación y Desarrollo</td></tr><tr><td>Ing. Guillermo Toranzo Pérez</td></tr><tr><td>Teléfono Celular: +53 58885007</td></tr><tr><td>Teléfono Fijo: +53 46323792</td></tr><tr><td>Email: <a href="mailto:guilletp87@gmail.com">guilletp87@gmail.com</a></td></tr><tr><td>&nbsp;</td></tr><tr><td></td></tr><tr><td>Dirección: Calle 1ra # 407 e/ 4ta y 6ta, </td></tr><tr><td>Reparto Delio Chacón, MEIJ</td></tr><tr><td>&nbsp;</td></tr></table>'
+    '<table style="text-align: center; font: 16px Arial,Helvetica,sans-serif;" width=326><tr><td><h2>Contáctenos</h2></td></tr><tr><td><img class="aligncenter" src="data/turnat.png"></td></tr><tr><td>&nbsp;</td></tr><tr><td>Ing. Guillermo Toranzo Pérez</td></tr><tr><td>Teléfono Celular: +53 58885007</td></tr><tr><td>Teléfono Fijo: +53 46325758</td></tr><tr><td>Email: <a href="mailto:guilletp87@gmail.com">guilletp87@gmail.com</a></td></tr><tr><td>&nbsp;</td></tr><tr><td></td></tr><tr><td>Dirección: Calle 1ra # 407 e/ 4ta y 6ta, </td></tr><tr><td>Reparto Delio Chacón, MEIJ</td></tr><tr><td>&nbsp;</td></tr></table>'
   );
   contacto.show();
 }).addTo(map);

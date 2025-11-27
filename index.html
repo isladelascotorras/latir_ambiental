@@ -2,32 +2,30 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <title>Latir Ambiental</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
-    <meta name="author" content="Guillermo Toranzo Pérez" />
-    <link rel="stylesheet" type="text/css" href="css/portada.css" />
-    <link rel="icon" type="image/png" href="images/faviconX400.png" />
+    <meta name="author" content="Guillermo Toranzo Perez" />
+    <title>Latir Ambiental</title>
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- fontawesome -->
     <link href="fontawesome-6.5.2-web/css/all.min.css" rel="stylesheet" />
+    <!-- Custom styles for this Portada y carousel -->
+    <link href="css/features.css" rel="stylesheet" />
+    <!-- <link href="css/carousel.css" rel="stylesheet" /> -->
+    <!-- <link href="css/cheatsheet.css" rel="stylesheet" /> -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- <link href="css/paginas.css" rel="stylesheet" /> -->
+    <!-- image/png -->
+    <link href="images/faviconX400.png" rel="icon" type="image/png" />
+    <style></style>
   </head>
   <body>
-    <script language="javascript">
-      function go() {
-        window.location.href = "menu.html";
-      }
-      setTimeout(go, 5000);
-    </script>
-    <figure class="fondo" onclick="go()">
-      <h3 style="flex-basis: 100%; text-align: center">
-        Isla de la Juventud, un Paraiso Escondido.
-        <!-- “La naturaleza inspira, enseña y ennoblece.” José Martí -->
-      </h3>
+    <!-- Menú -->
+    <div id="menu-container"></div>
 
+    <!-- Contenido principal -->
+    <main id="main-content">
+      <!-- <div class="loading">Cargando...</div> -->
       <div
         class="d-flex justify-content-center align-items-center"
         style="height: 100vh"
@@ -36,17 +34,26 @@
           <div class="spinner-border text-dark" role="status">
             <span class="sr-only">Loading...</span>
           </div>
-          <div class="small pt-2 text-dark">Cargando…</div>
+          <div class="small pt-2 text-dark loading">Cargando…</div>
         </div>
       </div>
-      <footer class="mt-auto text-white-50">
-        <p>
-          Cover template for
-          <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>,
-          by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.
-        </p>
-      </footer>
-    </figure>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/cheatsheet.js"></script> -->
+    <script src="js/script.js"></script>
+
+    <script language="javascript">
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          document.title = "¡Regresa!";
+        } else {
+          document.title = "¡Gracias por volver!";
+        }
+      });
+    </script>
   </body>
 </html>
