@@ -1,5 +1,5 @@
 /**
- * Created by toranzo on 11/01/2016.
+ * Created by gtoranzo on 11/01/2016.
  */
 var map = L.map("map", {
   zoomControl: true,
@@ -16,9 +16,9 @@ var additional_attrib =
   '<a href="https://isladelascotorras.github.io/latir_ambiental/" title="Latir Ambiental en Isla de la Juventud"><img src="data/turnat.png" alt="Turnat" width="60" height="15"></a>';
 var feature_group = new L.featureGroup([]);
 var route = new L.featureGroup([]);
-// http://localhost/maps/{z}/{x}/{y}.jpg
+// ../img/maps/{z}/{x}/{y}.jpg
 //http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
-var basemap = L.tileLayer("../img/maps/{z}/{x}/{y}.jpg", {
+var basemap = L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: additional_attrib,
 });
 basemap.addTo(map);
