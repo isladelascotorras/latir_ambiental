@@ -393,3 +393,15 @@ L.control
     },
   })
   .addTo(map);
+
+// Después de crear el mapa (var map = L.map(...))
+function resizeMap() {
+  if (map) map.invalidateSize();
+}
+// Al cargar la página
+window.addEventListener("load", resizeMap);
+// Al cambiar tamaño (incluye rotación de dispositivo)
+window.addEventListener("resize", () => {
+  clearTimeout(window.resizeMapTimer);
+  window.resizeMapTimer = setTimeout(resizeMap, 250); // debounce
+});

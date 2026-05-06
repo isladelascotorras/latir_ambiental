@@ -1,22 +1,8 @@
-/* GLOBAL STYLES */
-/* Padding below the footer and lighter body text */
-
-/* body {
-  padding-top: 0;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-} */
-
-/* main {
-  display: none;
-} */
-
 main.active {
   display: block;
 }
 
 /* CUSTOMIZE THE CAROUSEL */
-
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
@@ -40,7 +26,6 @@ main.active {
 }
 
 /* MARKETING CONTENT  */
-
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
@@ -59,7 +44,7 @@ main.active {
 .visitas-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1rem 0;
+  margin: 0rem 0;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
