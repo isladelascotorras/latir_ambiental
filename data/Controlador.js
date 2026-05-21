@@ -18,7 +18,7 @@ var feature_group = new L.featureGroup([]);
 var route = new L.featureGroup([]);
 // http://localhost/maps/{z}/{x}/{y}.jpg
 //http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
-var basemap = L.tileLayer("../img/maps/{z}/{x}/{y}.jpg", {
+var basemap = L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: additional_attrib,
 });
 basemap.addTo(map);
