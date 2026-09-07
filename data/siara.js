@@ -1,0 +1,791 @@
+var exp_grupoempresarial = {
+  type: "FeatureCollection",
+  crs: { type: "name", properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  features: [
+    {
+      type: "Feature",
+      properties: {
+        id: 100,
+        nombre: "Km 0 Museo Historico Municipal",
+        telef1: "",
+        telef2: "",
+        direccion: "Calle 30 e/ 37 y 39 # , Nueva Gerona, MEIJ",
+        categoria: "Bienes culturales inmuebles",
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [-82.8015, 21.8855],
+      },
+    },
+  ],
+};
+//--------------------------------------------
+var sitiosAborigenesMEIJ = {
+  type: "FeatureCollection",
+  crs: { type: "name", properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  features: [
+    {
+      type: "Feature",
+      properties: {
+        id: 1,
+        nombre: "Cueva de Los Alemanes",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular"
+      },
+      geometry: { type: "Point", coordinates: [-83.164064, 21.591294] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 2,
+        nombre: "Solapa No. 1 Puerto Francés",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular"
+      },
+      geometry: { type: "Point", coordinates: [-83.165898, 21.584947] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 3,
+        nombre: "Cueva Finlay Caleta Grande",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular"
+      },
+      geometry: { type: "Point", coordinates: [-83.112146, 21.542305] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 4,
+        nombre: "Solapa Nro. 02 de Caleta Grande",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular"
+      },
+      geometry: { type: "Point", coordinates: [-83.109980, 21.513701] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 5,
+        nombre: "Solapa Nro. 03 de Caleta Grande",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular"
+      },
+      geometry: { type: "Point", coordinates: [-83.110127, 21.513834] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 6,
+        nombre: "Carapachibey Sur de la Isla",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-"
+      },
+      geometry: { type: "Point", coordinates: [-82.924700, 21.459751] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 7,
+        nombre: "Los Semilleros Guanal",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-"
+      },
+      geometry: { type: "Point", coordinates: [-82.821703, 21.478111] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 8,
+        nombre: "Cueva del Indio",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-"
+      },
+      geometry: { type: "Point", coordinates: [-82.817200, 21.877393] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 9,
+        nombre: "Solapa Nro. 01 de Sierra de Casas",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-"
+      },
+      geometry: { type: "Point", coordinates: [-82.815311, 21.881027] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 10,
+        nombre: "El Guayabo",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-"
+      },
+      geometry: { type: "Point", coordinates: [-82.677700, 21.783160] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 11,
+        nombre: "Furnia Santa Isabel",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-"
+      },
+      geometry: { type: "Point", coordinates: [-82.696817, 21.684508] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 12,
+        nombre: "Asiento del Indio Cienaga de Lanier Sur de la isla",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-"
+      },
+      geometry: { type: "Point", coordinates: [-82.629693, 21.562363] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 13,
+        nombre: "Cueva de Lázaro",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular"
+      },
+      geometry: { type: "Point", coordinates: [-82.572574, 21.548479] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 14,
+        nombre: "Cueva 1 de Punta del Este",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular"
+      },
+      geometry: { type: "Point", coordinates: [-82.559190, 21.560351] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 15,
+        nombre: "Cueva 2 de Punta del Este",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular"
+      },
+      geometry: { type: "Point", coordinates: [-82.558713, 21.560808] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 16,
+        nombre: "Cueva 3 de Punta del Este",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular"
+      },
+      geometry: { type: "Point", coordinates: [-82.559180, 21.559448] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 17,
+        nombre: "Cueva 4 de Punta del Este",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular",
+        observacion: "CORREGIDO: coordenadas cercanas a Cueva de Lázaro (~1.3 km)"
+      },
+      geometry: { type: "Point", coordinates: [-82.559500, 21.559500] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 18,
+        nombre: "Canarreo 01 Cayo Largo",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-",
+        observacion: "CORREGIDO: longitud desplazada al este"
+      },
+      geometry: { type: "Point", coordinates: [-81.545000, 21.628000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 19,
+        nombre: "Canarreo 02 Cayo Largo",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-"
+      },
+      geometry: { type: "Point", coordinates: [-81.520231, 21.626445] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 20,
+        nombre: "Canarreo 03 Cayo Largo",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-"
+      },
+      geometry: { type: "Point", coordinates: [-81.536068, 21.625398] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 21,
+        nombre: "Canarreo 04 Cayo Cantiles",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-",
+        observacion: "CORREGIDO: cayos frente a costa suroeste de IJ"
+      },
+      geometry: { type: "Point", coordinates: [-82.865000, 21.585000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 22,
+        nombre: "Canarreo 05 Cayo Cantiles",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-",
+        observacion: "CORREGIDO: cayos frente a costa suroeste de IJ"
+      },
+      geometry: { type: "Point", coordinates: [-82.868000, 21.582000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 23,
+        nombre: "Canarreo 06 Cayo Cantiles",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-",
+        observacion: "CORREGIDO: cayos frente a costa suroeste de IJ"
+      },
+      geometry: { type: "Point", coordinates: [-82.870000, 21.580000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 24,
+        nombre: "Canarreo 07 Cayo Avalos",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-",
+        observacion: "CORREGIDO: cayos frente a costa suroeste de IJ"
+      },
+      geometry: { type: "Point", coordinates: [-82.875000, 21.575000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 25,
+        nombre: "La Palmita Maracayero",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-",
+        observacion: "NUEVO: zona norte-central Sierra de La Cañada"
+      },
+      geometry: { type: "Point", coordinates: [-82.850000, 21.850000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 26,
+        nombre: "Guanal I o La Manteca",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular",
+        observacion: "NUEVO: costa sur próximo a Los Semilleros"
+      },
+      geometry: { type: "Point", coordinates: [-82.820000, 21.480000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 27,
+        nombre: "Guanal II o Tres casimbas",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular",
+        observacion: "NUEVO: adyacente a Guanal I"
+      },
+      geometry: { type: "Point", coordinates: [-82.825000, 21.482000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 28,
+        nombre: "Solapa 4 Caleta Grande",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular",
+        observacion: "NUEVO: agrupada con Solapas 2 y 3"
+      },
+      geometry: { type: "Point", coordinates: [-83.110500, 21.514000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 29,
+        nombre: "Cueva Punta Pedernal",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular",
+        observacion: "NUEVO: extremo suroeste"
+      },
+      geometry: { type: "Point", coordinates: [-83.173000, 21.577000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 30,
+        nombre: "Sitio de Cueva Piñero",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular",
+        observacion: "NUEVO: zona Sierra de Casas"
+      },
+      geometry: { type: "Point", coordinates: [-82.815000, 21.880000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 31,
+        nombre: "Cueva de la Daga de Santa Isabel",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular",
+        observacion: "NUEVO: zona sur-central"
+      },
+      geometry: { type: "Point", coordinates: [-82.685000, 21.550000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 32,
+        nombre: "San Francisco de las Piedras I",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-",
+        observacion: "NUEVO: parte central-este"
+      },
+      geometry: { type: "Point", coordinates: [-82.750000, 21.700000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 33,
+        nombre: "Nicolas Copérnico",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-",
+        errorInventario: true,
+        observacion: "ERROR INVENTARIO: fue ESBEC 9 de 1970 no sitio aborigen"
+      },
+      geometry: { type: "Point", coordinates: [-82.939520, 21.771640] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 34,
+        nombre: "Combinado Citrícola",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "-",
+        errorInventario: true,
+        observacion: "ERROR INVENTARIO: instalación agroindustrial s.XX de 1978"
+      },
+      geometry: { type: "Point", coordinates: [-82.815000, 21.855000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 35,
+        nombre: "Punta Brava Sur de la Isla",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular",
+        observacion: "NUEVO: punta costa sur"
+      },
+      geometry: { type: "Point", coordinates: [-82.600000, 21.516700] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 36,
+        nombre: "Cerro de los Murcielagos Gerona",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Malo",
+        observacion: "NUEVO: elevación cercana a Nueva Gerona"
+      },
+      geometry: { type: "Point", coordinates: [-82.820000, 21.730000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 37,
+        nombre: "Cueva de Cocodrilo 1",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular",
+        observacion: "NUEVO: costa sur oeste de Punta Francés"
+      },
+      geometry: { type: "Point", coordinates: [-83.080000, 21.525000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 38,
+        nombre: "Cueva Grande de Santa Isabel",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular",
+        observacion: "NUEVO: macizo kárstico Santa Isabel"
+      },
+      geometry: { type: "Point", coordinates: [-82.690000, 21.555000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 39,
+        nombre: "Las Piedras de Cayo Largo",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular",
+        observacion: "NUEVO: Cayo Largo del Sur"
+      },
+      geometry: { type: "Point", coordinates: [-81.550000, 21.600000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 40,
+        nombre: "Solapa de cayo Piedras Cayo Largo",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular",
+        observacion: "NUEVO: Cayo Piedra noroeste de Cayo Largo"
+      },
+      geometry: { type: "Point", coordinates: [-81.580000, 21.630000] }
+    },
+    {
+      type: "Feature",
+      properties: {
+        id: 41,
+        nombre: "Punta Pedernales Sur de la Isla",
+        categoria: "Bienes culturales inmuebles",
+        tipo: "Patrimonio Cultural",
+        articulo: "Art. 16.2 Ley Gen. 155",
+        territorio: "MEIJ",
+        clasificacion1: "Sitio",
+        clasificacion2: "Arqueológico",
+        clasificacion3: "Aborígen",
+        ambito: "Terrestre",
+        propiedad: "Socialista de todo el pueblo",
+        estado: "Regular",
+        observacion: "NUEVO: límite Parque Nacional"
+      },
+      geometry: { type: "Point", coordinates: [-83.173300, 21.577300] }
+    }
+  ]
+};

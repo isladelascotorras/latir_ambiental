@@ -1,25 +1,4 @@
-var exp_grupoempresarial = {
-  type: "FeatureCollection",
-  crs: { type: "name", properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-  features: [
-    {
-      type: "Feature",
-      properties: {
-        id: 100,
-        nombre: "Dirección del Grupo Empresarial",
-        telef1: "46311954",
-        telef2: "46311953",
-        direccion: "Calle 28 e/ 33 y 35 # 3303, Nueva Gerona, MEIJ",
-        categoria: "Empresa",
-      },
-      geometry: {
-        type: "Point",
-        coordinates: [-82.802019247130033, 21.885391591167604],
-      },
-    },
-  ],
-};
-//----------------------------------------------------------------ok
+
 var cocodrilera_i = {
   type: "FeatureCollection",
   crs: { type: "name", properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" } },

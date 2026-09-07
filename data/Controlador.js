@@ -1,5 +1,5 @@
 /**
- * Created by toranzo on 11/01/2016.
+ * Created by gtoranzo on 11/01/2016.
  */
 var map = L.map("map", {
   zoomControl: true,
@@ -16,7 +16,7 @@ var additional_attrib =
   '<a href="https://isladelascotorras.github.io/latir_ambiental/" title="Latir Ambiental en Isla de la Juventud"><img src="data/turnat.png" alt="Turnat" width="60" height="15"></a>';
 var feature_group = new L.featureGroup([]);
 var route = new L.featureGroup([]);
-// http://localhost/maps/{z}/{x}/{y}.jpg
+// ../img/maps/{z}/{x}/{y}.jpg
 //http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
 var basemap = L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: additional_attrib,
@@ -57,7 +57,78 @@ var exp_grupoempresarialJSON = new L.geoJson(exp_grupoempresarial, {
 
 feature_group.addLayer(exp_grupoempresarialJSON);
 feature_group.addTo(map);
-//-------------------------------------------------------
+//------------------sitiosAborigenesMEIJ-------------------------------------
+// <script src="siara.js"></script>
+// Crear capa GeoJSON filtrando los sitios con error de inventario
+var capaSitios = L.geoJSON(sitiosAborigenesMEIJ, {
+  
+  // 1. FILTRO: Excluye los sitios marcados con error de inventario (IDs 33 y 34)
+  filter: function(feature) {
+    return feature.properties.errorInventario !== true;
+  },
+
+  // 2. ESTILO: Mantiene la lógica de colores por estado de conservación
+  pointToLayer: function(feature, latlng) {
+    var color = "green"; // Por defecto (ej. cuando el estado es "-" o no especificado)
+    if (feature.properties.estado === "Malo") {
+      color = "#e74c3c"; // Rojo
+    } else if (feature.properties.estado === "Regular") {
+      color = "#f39c12"; // Naranja
+    }
+    
+    return L.circleMarker(latlng, {
+      radius: 7,
+      fillColor: color,
+      color: "#2c3e50",
+      weight: 1.5,
+      opacity: 1,
+      fillOpacity: 0.85
+    });
+  },
+
+  // 3. POPUP: Muestra TODOS los valores excepto 'id' y 'observacion'
+  onEachFeature: function(feature, layer) {
+    var p = feature.properties;
+    var coords = feature.geometry.coordinates;
+    
+    // Función auxiliar para crear filas de tabla limpias
+    function crearFila(etiqueta, valor) {
+      var textoValor = valor ? String(valor).trim() : "No especificado";
+      if (textoValor === "" || textoValor === "-") textoValor = "No especificado";
+      
+      return "<tr>" +
+             "<td style='padding: 4px 0; font-weight: 600; color: #555; vertical-align: top; width: 35%;'>" + etiqueta + ":</td>" +
+             "<td style='padding: 4px 0; color: #222; vertical-align: top;'>" + textoValor + "</td>" +
+             "</tr>";
+    }
+
+    // Unificamos las 3 clasificaciones en una sola línea para ahorrar espacio
+    var clasificaciones = [p.clasificacion1, p.clasificacion2, p.clasificacion3]
+                          .filter(function(c) { return c && c !== "-"; })
+                          .join(" / ");
+
+    // Construimos el HTML del popup
+    var popupContent = "<div style='min-width: 230px; font-family: Arial, sans-serif; font-size: 13px;'>";
+    popupContent += "<h4 style='margin: 0 0 8px 0; color: #2c3e50; border-bottom: 2px solid #f39c12; padding-bottom: 5px;'>" + p.nombre + "</h4>";
+    popupContent += "<table style='width: 100%; border-collapse: collapse;'>";
+    
+    popupContent += crearFila("Categoría", p.categoria);
+    popupContent += crearFila("Tipo", p.tipo);
+    popupContent += crearFila("Artículo", p.articulo);
+    popupContent += crearFila("Territorio", p.territorio);
+    popupContent += crearFila("Clasificación", clasificaciones);
+    popupContent += crearFila("Ámbito", p.ambito);
+    popupContent += crearFila("Propiedad", p.propiedad);
+    popupContent += crearFila("Estado", p.estado);
+    // Incluimos las coordenadas ya que son un valor de la tabla (Longitud/Latitud)
+    popupContent += crearFila("Coordenadas", coords[0].toFixed(6) + ", " + coords[1].toFixed(6));
+    
+    popupContent += "</table></div>";
+    
+    layer.bindPopup(popupContent);
+  }
+}).addTo(map);
+//-----------------------------------------------------
 // icons
 var horario = L.control.sidebar("horario", {
   closeButton: true,
@@ -111,7 +182,7 @@ L.easyButton('<i class="mdi mdi-contacts fa-lg "></i>', function (btn, map) {
   horario.hide();
   ayuda.hide();
   contacto.setContent(
-    '<table style="text-align: center; font: 16px Arial,Helvetica,sans-serif;" width=326><tr><td><h2>Contáctenos</h2></td></tr><tr><td><img class="aligncenter" src="data/turnat.png"></td></tr><tr><td>Especialista en Investigación, Innovación y Desarrollo</td></tr><tr><td>Ing. Guillermo Toranzo Pérez</td></tr><tr><td>Teléfono Celular: +53 58885007</td></tr><tr><td>Teléfono Fijo: +53 46323792</td></tr><tr><td>Email: <a href="mailto:guilletp87@gmail.com">guilletp87@gmail.com</a></td></tr><tr><td>&nbsp;</td></tr><tr><td></td></tr><tr><td>Dirección: Calle 1ra # 407 e/ 4ta y 6ta, </td></tr><tr><td>Reparto Delio Chacón, MEIJ</td></tr><tr><td>&nbsp;</td></tr></table>'
+    '<table style="text-align: center; font: 16px Arial,Helvetica,sans-serif;" width=326><tr><td><h2>Contáctenos</h2></td></tr><tr><td><img class="aligncenter" src="data/turnat.png"></td></tr><tr><td>&nbsp;</td></tr><tr><td>Ing. Guillermo Toranzo Pérez</td></tr><tr><td>Teléfono Celular: +53 58885007</td></tr><tr><td>Teléfono Fijo: +53 46325758</td></tr><tr><td>Email: <a href="mailto:guilletp87@gmail.com">guilletp87@gmail.com</a></td></tr><tr><td>&nbsp;</td></tr><tr><td></td></tr><tr><td>Dirección: Calle 1ra # 407 e/ 4ta y 6ta, </td></tr><tr><td>Reparto Delio Chacón, MEIJ</td></tr><tr><td>&nbsp;</td></tr></table>'
   );
   contacto.show();
 }).addTo(map);
@@ -393,3 +464,15 @@ L.control
     },
   })
   .addTo(map);
+
+// Después de crear el mapa (var map = L.map(...))
+function resizeMap() {
+  if (map) map.invalidateSize();
+}
+// Al cargar la página
+window.addEventListener("load", resizeMap);
+// Al cambiar tamaño (incluye rotación de dispositivo)
+window.addEventListener("resize", () => {
+  clearTimeout(window.resizeMapTimer);
+  window.resizeMapTimer = setTimeout(resizeMap, 250); // debounce
+});

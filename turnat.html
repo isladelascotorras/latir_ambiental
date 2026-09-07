@@ -5,36 +5,39 @@
     <meta charset="utf-8" />
     <meta name="description" content="" />
     <meta name="author" content="Guillermo Toranzo Pérez" />
-    <link rel="icon" type="image/png" href="images/faviconX128.png" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="icon" type="image/png" href="./images/faviconX128.png" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
     <!-- font-awesome -->
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="leaflet/leaflet.awesome-markers.css"
+      href="./leaflet/leaflet.awesome-markers.css"
     />
     <link
       media="all"
       rel="stylesheet"
       type="text/css"
-      href="css/materialdesignicons.css"
+      href="./css/materialdesignicons.css"
     />
     <link
       media="all"
       rel="stylesheet"
       type="text/css"
-      href="css/materialdesignicons.min.css"
+      href="./css/materialdesignicons.min.css"
     />
-
-    <link rel="stylesheet" type="text/css" href="leaflet/leaflet.css" />
-    <link rel="stylesheet" type="text/css" href="css/own_style.css" />
-    <link rel="stylesheet" type="text/css" href="css/L.Control.Sidebar.css" />
-    <link rel="stylesheet" type="text/css" href="css/easy-button.css" />
+    <link rel="stylesheet" type="text/css" href="./leaflet/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="./css/own_style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/L.Control.Sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="./css/easy-button.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="leaflet/fullscreen/leaflet.fullscreen.css"
+      href="./leaflet/fullscreen/leaflet.fullscreen.css"
     />
 
     <style type="text/css">
@@ -65,16 +68,34 @@
         padding: 6px 12px;
         vertical-align: middle;
       }
-      .aligncenter {
-        display: block;
-        margin: 0 auto 1.2rem;
+      /* Estilos para móviles (ancho ≤ 768px) */
+      @media (max-width: 768px) {
+        .combo {
+          float: none;
+          margin: 10px auto 0;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          width: 90%;
+          max-width: 300px;
+          text-align: center;
+        }
+
+        .combo select,
+        .combo input.btn {
+          width: 100%;
+          margin-top: 8px;
+          box-sizing: border-box;
+        }
+
+        .combo i {
+          display: block;
+          margin-bottom: 8px;
+        }
       }
     </style>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  -->
   </head>
   <body>
-    <div id="map" style="background-color: #abdef2">
+    <div id="map">
       <div id="combo" class="combo leaflet-right">
         <form>
           <i class="mdi mdi-bus fa-lg"></i>
@@ -107,18 +128,19 @@
       <div id="contactos"></div>
     </div>
 
-    <script src="leaflet/leaflet.js"></script>
-    <script src="js/leaflet-hash.js"></script>
-    <script src="js/Autolinker.min.js"></script>
-    <script src="leaflet/L.Polyline.SnakeAnim.js"></script>
-    <script src="leaflet/L.Control.Sidebar.js"></script>
-    <script src="leaflet/easy-button.js"></script>
-    <script src="leaflet/fullscreen/Leaflet.fullscreen.min.js"></script>
+    <script src="./leaflet/leaflet.js"></script>
+    <script src="./js/leaflet-hash.js"></script>
+    <script src="./js/Autolinker.min.js"></script>
+    <script src="./leaflet/L.Polyline.SnakeAnim.js"></script>
+    <script src="./leaflet/L.Control.Sidebar.js"></script>
+    <script src="./leaflet/easy-button.js"></script>
+    <script src="./leaflet/fullscreen/Leaflet.fullscreen.min.js"></script>
     <!-- awesome -->
-    <script src="leaflet/leaflet.awesome-markers.js"></script>
+    <script src="./leaflet/leaflet.awesome-markers.js"></script>
 
-    <script src="data/exp_paradastodas.js"></script>
-    <script src="data/exp_rutas.js"></script>
-    <script src="data/Controlador.js"></script>
+    <script src="./data/exp_paradastodas.js"></script>
+    <script src="./data/exp_rutas.js"></script>
+    <script src="./data/siara.js"></script>
+    <script src="./data/Controlador.js"></script>
   </body>
 </html>

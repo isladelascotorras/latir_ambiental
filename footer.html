@@ -1,0 +1,216 @@
+<!-- footer -->
+<!-- container py-5 -->
+<footer class="footer container py-5 px-4">
+  <!-- row  class="container px-4 py-5"
+   <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+  -->
+  <div
+    class="footer-content row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"
+  >
+    <!--   -->
+    <div class="col-3 col-md">
+      <!-- <i class="fas fa-home"></i> -->
+      <h4 class="fw-bold mb-0">Sitios de interés</h4>
+      <ul class="list-unstyled text-small">
+        <li>
+          <a
+            class="link-secondary"
+            href="https://www.citma.gob.cu/"
+            title="CITMA"
+            >CITMA</a
+          >
+        </li>
+        <li>
+          <a
+            class="link-secondary"
+            href="https://idevida.geocuba.cu/"
+            title="IDE de la Tarea Vida"
+            >IDE Vida</a
+          >
+        </li>
+        <li>
+          <a
+            class="link-secondary"
+            href="https://idevida.geocuba.cu/visorij"
+            title="Visor de mapas"
+            >Visor de mapas</a
+          >
+        </li>
+        <li>
+          <a
+            class="link-secondary"
+            href="https://www.uij.edu.cu/"
+            title="Universidad Jesús Montané Oropesa MEIJ"
+            >Universidad Jesús Montané O.</a
+          >
+        </li>
+        <li>
+          <a
+            class="link-secondary"
+            href="https://www.redisla.gob.cu/es/"
+            title="Portal del Ciudadano"
+            >Portal del Ciudadano</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!--  -->
+    <div class="col-3 col-md">
+      <!-- <i class="fas fa-calendar"></i> -->
+      <h4 class="fw-bold mb-0">Recursos</h4>
+      <ul class="list-unstyled text-small">
+        <!-- <li><a class="link-secondary" href="frases.html">Frases</a></li> -->
+        <li>
+          <a class="link-secondary" href="efemerides.html" title="Efemérides"
+            >Efemérides</a
+          >
+        </li>
+        <li>
+          <a class="link-secondary" href="biografia.html" title="Biografía"
+            >Biografía</a
+          >
+        </li>
+        <li>
+          <a class="link-secondary" href="apostol.html" title="Apostol"
+            >Apostol</a
+          >
+        </li>
+        <li>
+          <a class="link-secondary" href="turnat.html" title="TURNAT">TURNAT</a>
+        </li>
+      </ul>
+    </div>
+    <!--  -->
+    <div class="col-3 col-md">
+      <!-- <i class="fas fa-book-open"></i> -->
+      <h4 class="fw-bold mb-0">Acerca de</h4>
+      <ul class="list-unstyled text-small">
+        <!-- <li><a class="link-secondary" href="ayuda.html">Ayuda</a></li> -->
+        <li>
+          <a class="link-secondary" href="./pages/autor.html" title="Autores"
+            >Autores</a
+          >
+        </li>
+        <li>
+          <a
+            class="link-secondary"
+            href="./pages/contactenos.html"
+            title="Contáctenos"
+            >Contáctenos</a
+          >
+        </li>
+        <li>
+          <a
+            class="link-secondary"
+            href="./pages/privacidad.html"
+            title="Política de Privacidad"
+            >Política de Privacidad</a
+          >
+        </li>
+        <li>
+          <a
+            class="link-secondary"
+            href="./pages/license.html"
+            title="Terminos de uso"
+            >Terminos de uso</a
+          >
+        </li>
+        <li>
+          <a
+            class="link-secondary"
+            href="./pages/legal.html"
+            title="Aviso Legal"
+            >Aviso Legal</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Estadísticas de visitas -->
+    <div class="col-3 col-md">
+      <!-- <i class="fas fa-book-open"></i> -->
+      <h4 class="fw-bold mb-0">Visitas</h4>
+      <!-- <ul class="list-unstyled text-small"> -->
+      <table class="visitas-table">
+        <tbody>
+          <tr>
+            <td>Hoy</td>
+            <td id="hoy">2</td>
+          </tr>
+          <tr>
+            <td>Ayer</td>
+            <td id="ayer">3</td>
+          </tr>
+          <tr>
+            <td>Esta Semana</td>
+            <td id="semana">7</td>
+          </tr>
+          <tr>
+            <td>Este Mes</td>
+            <td id="mes">30</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td id="total">31</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="online-users">
+        Actualmente hay <span id="invitados">2</span> invitados en línea.
+      </div>
+      <!-- </ul> -->
+      <script language="javascript">
+        // Simular datos de visitas
+        function generarDatosSimulados() {
+          return {
+            hoy: Math.floor(Math.random() * 100),
+            ayer: Math.floor(Math.random() * 100),
+            semana: Math.floor(Math.random() * 500),
+            mes: Math.floor(Math.random() * 2000),
+            total: Math.floor(Math.random() * 10000),
+            invitados: Math.floor(Math.random() * 50) + 1,
+          };
+        }
+        // Actualizar tabla con datos
+        function actualizarEstadisticas() {
+          const datos = generarDatosSimulados();
+
+          document.getElementById("hoy").textContent = datos.hoy;
+          document.getElementById("ayer").textContent = datos.ayer;
+          document.getElementById("semana").textContent = datos.semana;
+          document.getElementById("mes").textContent = datos.mes;
+          document.getElementById("total").textContent = datos.total;
+          document.getElementById("invitados").textContent = datos.invitados;
+        }
+
+        // Cargar estadísticas al cargar la página
+        document.addEventListener("DOMContentLoaded", () => {
+          actualizarEstadisticas();
+
+          // Actualizar cada 30 segundos (simulando actualización en tiempo real)
+          setInterval(actualizarEstadisticas, 30000);
+        });
+
+        // Opcional: Forzar actualización manual
+        function refrescarEstadisticas() {
+          actualizarEstadisticas();
+        }
+      </script>
+    </div>
+    <!--  -->
+    <div class="col-12 col-md d-flex">
+      <img
+        src="./images/faviconX400.png"
+        alt="Bootstrap"
+        width="32"
+        height="32"
+      />
+      <small class="d-block mb-3 text-muted"
+        >&copy; 2025 Tarea Vida &middot;</small
+      >
+      <!--    
+      <i class="fas fa-arrow-circle-up" style="font-size: 3em"></i>
+      -->
+    </div>
+  </div>
+</footer>
