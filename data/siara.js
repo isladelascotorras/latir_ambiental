@@ -14,7 +14,7 @@ var exp_grupoempresarial = {
       },
       geometry: {
         type: "Point",
-        coordinates: [-82.8015, 21.8855],
+        coordinates: [-82.80155, 21.88555],
       },
     },
   ],
@@ -38,9 +38,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "Regular"
+        estado: "Regular",
       },
-      geometry: { type: "Point", coordinates: [-83.164064, 21.591294] }
+      geometry: { type: "Point", coordinates: [-83.164064, 21.591294] },
     },
     {
       type: "Feature",
@@ -56,9 +56,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "Regular"
+        estado: "Regular",
       },
-      geometry: { type: "Point", coordinates: [-83.165898, 21.584947] }
+      geometry: { type: "Point", coordinates: [-83.165898, 21.584947] },
     },
     {
       type: "Feature",
@@ -74,9 +74,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "Regular"
+        estado: "Regular",
       },
-      geometry: { type: "Point", coordinates: [-83.112146, 21.542305] }
+      geometry: { type: "Point", coordinates: [-83.112146, 21.542305] },
     },
     {
       type: "Feature",
@@ -92,9 +92,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "Regular"
+        estado: "Regular",
       },
-      geometry: { type: "Point", coordinates: [-83.109980, 21.513701] }
+      geometry: { type: "Point", coordinates: [-83.10998, 21.513701] },
     },
     {
       type: "Feature",
@@ -110,9 +110,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "Regular"
+        estado: "Regular",
       },
-      geometry: { type: "Point", coordinates: [-83.110127, 21.513834] }
+      geometry: { type: "Point", coordinates: [-83.110127, 21.513834] },
     },
     {
       type: "Feature",
@@ -128,9 +128,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "-"
+        estado: "-",
       },
-      geometry: { type: "Point", coordinates: [-82.924700, 21.459751] }
+      geometry: { type: "Point", coordinates: [-82.9247, 21.459751] },
     },
     {
       type: "Feature",
@@ -146,9 +146,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "-"
+        estado: "-",
       },
-      geometry: { type: "Point", coordinates: [-82.821703, 21.478111] }
+      geometry: { type: "Point", coordinates: [-82.821703, 21.478111] },
     },
     {
       type: "Feature",
@@ -164,9 +164,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "-"
+        estado: "-",
       },
-      geometry: { type: "Point", coordinates: [-82.817200, 21.877393] }
+      geometry: { type: "Point", coordinates: [-82.8172, 21.877393] },
     },
     {
       type: "Feature",
@@ -182,9 +182,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "-"
+        estado: "-",
       },
-      geometry: { type: "Point", coordinates: [-82.815311, 21.881027] }
+      geometry: { type: "Point", coordinates: [-82.815311, 21.881027] },
     },
     {
       type: "Feature",
@@ -200,9 +200,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "-"
+        estado: "-",
       },
-      geometry: { type: "Point", coordinates: [-82.677700, 21.783160] }
+      geometry: { type: "Point", coordinates: [-82.6777, 21.78316] },
     },
     {
       type: "Feature",
@@ -218,9 +218,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "-"
+        estado: "-",
       },
-      geometry: { type: "Point", coordinates: [-82.696817, 21.684508] }
+      geometry: { type: "Point", coordinates: [-82.696817, 21.684508] },
     },
     {
       type: "Feature",
@@ -236,9 +236,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "-"
+        estado: "-",
       },
-      geometry: { type: "Point", coordinates: [-82.629693, 21.562363] }
+      geometry: { type: "Point", coordinates: [-82.629693, 21.562363] },
     },
     {
       type: "Feature",
@@ -254,9 +254,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "Regular"
+        estado: "Regular",
       },
-      geometry: { type: "Point", coordinates: [-82.572574, 21.548479] }
+      geometry: { type: "Point", coordinates: [-82.572574, 21.548479] },
     },
     {
       type: "Feature",
@@ -272,9 +272,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "Regular"
+        estado: "Regular",
       },
-      geometry: { type: "Point", coordinates: [-82.559190, 21.560351] }
+      geometry: { type: "Point", coordinates: [-82.55919, 21.560351] },
     },
     {
       type: "Feature",
@@ -290,9 +290,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "Regular"
+        estado: "Regular",
       },
-      geometry: { type: "Point", coordinates: [-82.558713, 21.560808] }
+      geometry: { type: "Point", coordinates: [-82.558713, 21.560808] },
     },
     {
       type: "Feature",
@@ -308,9 +308,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "Regular"
+        estado: "Regular",
       },
-      geometry: { type: "Point", coordinates: [-82.559180, 21.559448] }
+      geometry: { type: "Point", coordinates: [-82.55918, 21.559448] },
     },
     {
       type: "Feature",
@@ -327,9 +327,10 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "Regular",
-        observacion: "CORREGIDO: coordenadas cercanas a Cueva de Lázaro (~1.3 km)"
+        observacion:
+          "CORREGIDO: coordenadas cercanas a Cueva de Lázaro (~1.3 km)",
       },
-      geometry: { type: "Point", coordinates: [-82.559500, 21.559500] }
+      geometry: { type: "Point", coordinates: [-82.5595, 21.5595] },
     },
     {
       type: "Feature",
@@ -346,9 +347,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "-",
-        observacion: "CORREGIDO: longitud desplazada al este"
+        observacion: "CORREGIDO: longitud desplazada al este",
       },
-      geometry: { type: "Point", coordinates: [-81.545000, 21.628000] }
+      geometry: { type: "Point", coordinates: [-81.545, 21.628] },
     },
     {
       type: "Feature",
@@ -364,9 +365,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "-"
+        estado: "-",
       },
-      geometry: { type: "Point", coordinates: [-81.520231, 21.626445] }
+      geometry: { type: "Point", coordinates: [-81.520231, 21.626445] },
     },
     {
       type: "Feature",
@@ -382,9 +383,9 @@ var sitiosAborigenesMEIJ = {
         clasificacion3: "Aborígen",
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
-        estado: "-"
+        estado: "-",
       },
-      geometry: { type: "Point", coordinates: [-81.536068, 21.625398] }
+      geometry: { type: "Point", coordinates: [-81.536068, 21.625398] },
     },
     {
       type: "Feature",
@@ -401,9 +402,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "-",
-        observacion: "CORREGIDO: cayos frente a costa suroeste de IJ"
+        observacion: "CORREGIDO: cayos frente a costa suroeste de IJ",
       },
-      geometry: { type: "Point", coordinates: [-82.865000, 21.585000] }
+      geometry: { type: "Point", coordinates: [-82.865, 21.585] },
     },
     {
       type: "Feature",
@@ -420,9 +421,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "-",
-        observacion: "CORREGIDO: cayos frente a costa suroeste de IJ"
+        observacion: "CORREGIDO: cayos frente a costa suroeste de IJ",
       },
-      geometry: { type: "Point", coordinates: [-82.868000, 21.582000] }
+      geometry: { type: "Point", coordinates: [-82.868, 21.582] },
     },
     {
       type: "Feature",
@@ -439,9 +440,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "-",
-        observacion: "CORREGIDO: cayos frente a costa suroeste de IJ"
+        observacion: "CORREGIDO: cayos frente a costa suroeste de IJ",
       },
-      geometry: { type: "Point", coordinates: [-82.870000, 21.580000] }
+      geometry: { type: "Point", coordinates: [-82.87, 21.58] },
     },
     {
       type: "Feature",
@@ -458,9 +459,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "-",
-        observacion: "CORREGIDO: cayos frente a costa suroeste de IJ"
+        observacion: "CORREGIDO: cayos frente a costa suroeste de IJ",
       },
-      geometry: { type: "Point", coordinates: [-82.875000, 21.575000] }
+      geometry: { type: "Point", coordinates: [-82.875, 21.575] },
     },
     {
       type: "Feature",
@@ -477,9 +478,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "-",
-        observacion: "NUEVO: zona norte-central Sierra de La Cañada"
+        observacion: "NUEVO: zona norte-central Sierra de La Cañada",
       },
-      geometry: { type: "Point", coordinates: [-82.850000, 21.850000] }
+      geometry: { type: "Point", coordinates: [-82.85, 21.85] },
     },
     {
       type: "Feature",
@@ -496,9 +497,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "Regular",
-        observacion: "NUEVO: costa sur próximo a Los Semilleros"
+        observacion: "NUEVO: costa sur próximo a Los Semilleros",
       },
-      geometry: { type: "Point", coordinates: [-82.820000, 21.480000] }
+      geometry: { type: "Point", coordinates: [-82.82, 21.48] },
     },
     {
       type: "Feature",
@@ -515,9 +516,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "Regular",
-        observacion: "NUEVO: adyacente a Guanal I"
+        observacion: "NUEVO: adyacente a Guanal I",
       },
-      geometry: { type: "Point", coordinates: [-82.825000, 21.482000] }
+      geometry: { type: "Point", coordinates: [-82.825, 21.482] },
     },
     {
       type: "Feature",
@@ -534,9 +535,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "Regular",
-        observacion: "NUEVO: agrupada con Solapas 2 y 3"
+        observacion: "NUEVO: agrupada con Solapas 2 y 3",
       },
-      geometry: { type: "Point", coordinates: [-83.110500, 21.514000] }
+      geometry: { type: "Point", coordinates: [-83.1105, 21.514] },
     },
     {
       type: "Feature",
@@ -553,9 +554,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "Regular",
-        observacion: "NUEVO: extremo suroeste"
+        observacion: "NUEVO: extremo suroeste",
       },
-      geometry: { type: "Point", coordinates: [-83.173000, 21.577000] }
+      geometry: { type: "Point", coordinates: [-83.173, 21.577] },
     },
     {
       type: "Feature",
@@ -572,9 +573,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "Regular",
-        observacion: "NUEVO: zona Sierra de Casas"
+        observacion: "NUEVO: zona Sierra de Casas",
       },
-      geometry: { type: "Point", coordinates: [-82.815000, 21.880000] }
+      geometry: { type: "Point", coordinates: [-82.815, 21.88] },
     },
     {
       type: "Feature",
@@ -591,9 +592,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "Regular",
-        observacion: "NUEVO: zona sur-central"
+        observacion: "NUEVO: zona sur-central",
       },
-      geometry: { type: "Point", coordinates: [-82.685000, 21.550000] }
+      geometry: { type: "Point", coordinates: [-82.685, 21.55] },
     },
     {
       type: "Feature",
@@ -610,9 +611,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "-",
-        observacion: "NUEVO: parte central-este"
+        observacion: "NUEVO: parte central-este",
       },
-      geometry: { type: "Point", coordinates: [-82.750000, 21.700000] }
+      geometry: { type: "Point", coordinates: [-82.75, 21.7] },
     },
     {
       type: "Feature",
@@ -630,9 +631,9 @@ var sitiosAborigenesMEIJ = {
         propiedad: "Socialista de todo el pueblo",
         estado: "-",
         errorInventario: true,
-        observacion: "ERROR INVENTARIO: fue ESBEC 9 de 1970 no sitio aborigen"
+        observacion: "ERROR INVENTARIO: fue ESBEC 9 de 1970 no sitio aborigen",
       },
-      geometry: { type: "Point", coordinates: [-82.939520, 21.771640] }
+      geometry: { type: "Point", coordinates: [-82.93952, 21.77164] },
     },
     {
       type: "Feature",
@@ -650,9 +651,10 @@ var sitiosAborigenesMEIJ = {
         propiedad: "Socialista de todo el pueblo",
         estado: "-",
         errorInventario: true,
-        observacion: "ERROR INVENTARIO: instalación agroindustrial s.XX de 1978"
+        observacion:
+          "ERROR INVENTARIO: instalación agroindustrial s.XX de 1978",
       },
-      geometry: { type: "Point", coordinates: [-82.815000, 21.855000] }
+      geometry: { type: "Point", coordinates: [-82.815, 21.855] },
     },
     {
       type: "Feature",
@@ -669,9 +671,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "Regular",
-        observacion: "NUEVO: punta costa sur"
+        observacion: "NUEVO: punta costa sur",
       },
-      geometry: { type: "Point", coordinates: [-82.600000, 21.516700] }
+      geometry: { type: "Point", coordinates: [-82.6, 21.5167] },
     },
     {
       type: "Feature",
@@ -688,9 +690,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "Malo",
-        observacion: "NUEVO: elevación cercana a Nueva Gerona"
+        observacion: "NUEVO: elevación cercana a Nueva Gerona",
       },
-      geometry: { type: "Point", coordinates: [-82.820000, 21.730000] }
+      geometry: { type: "Point", coordinates: [-82.82, 21.73] },
     },
     {
       type: "Feature",
@@ -707,9 +709,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "Regular",
-        observacion: "NUEVO: costa sur oeste de Punta Francés"
+        observacion: "NUEVO: costa sur oeste de Punta Francés",
       },
-      geometry: { type: "Point", coordinates: [-83.080000, 21.525000] }
+      geometry: { type: "Point", coordinates: [-83.08, 21.525] },
     },
     {
       type: "Feature",
@@ -726,9 +728,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "Regular",
-        observacion: "NUEVO: macizo kárstico Santa Isabel"
+        observacion: "NUEVO: macizo kárstico Santa Isabel",
       },
-      geometry: { type: "Point", coordinates: [-82.690000, 21.555000] }
+      geometry: { type: "Point", coordinates: [-82.69, 21.555] },
     },
     {
       type: "Feature",
@@ -745,9 +747,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "Regular",
-        observacion: "NUEVO: Cayo Largo del Sur"
+        observacion: "NUEVO: Cayo Largo del Sur",
       },
-      geometry: { type: "Point", coordinates: [-81.550000, 21.600000] }
+      geometry: { type: "Point", coordinates: [-81.55, 21.6] },
     },
     {
       type: "Feature",
@@ -764,9 +766,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "Regular",
-        observacion: "NUEVO: Cayo Piedra noroeste de Cayo Largo"
+        observacion: "NUEVO: Cayo Piedra noroeste de Cayo Largo",
       },
-      geometry: { type: "Point", coordinates: [-81.580000, 21.630000] }
+      geometry: { type: "Point", coordinates: [-81.58, 21.63] },
     },
     {
       type: "Feature",
@@ -783,9 +785,9 @@ var sitiosAborigenesMEIJ = {
         ambito: "Terrestre",
         propiedad: "Socialista de todo el pueblo",
         estado: "Regular",
-        observacion: "NUEVO: límite Parque Nacional"
+        observacion: "NUEVO: límite Parque Nacional",
       },
-      geometry: { type: "Point", coordinates: [-83.173300, 21.577300] }
-    }
-  ]
+      geometry: { type: "Point", coordinates: [-83.1733, 21.5773] },
+    },
+  ],
 };
